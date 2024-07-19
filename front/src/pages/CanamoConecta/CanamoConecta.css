@@ -105,6 +105,84 @@
 
 }
 
+.header{
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+    padding: 30px;
+    font-size: 70px;
+    font-weight: 700;
+    background-color: #3E4D3D;
+    color: white;
+}
+
+.wrapper{
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+}
+
+.wrapper p{
+    font-size: (12px, 4vw, 24px);
+}
+
+.shortImageWrapper{
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.shortImageWrapper img{
+    width: 100%;
+    height: 100%;
+}
+
+.largeTextWrapper{
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+    justify-content: space-around;
+    background-color: black;
+    color: white;
+    padding: 20px;
+}
+
+.largeTextWrapper h2{
+    font-size: clamp(25px, 4vw, 40px);
+    font-weight: 600;
+}
+
+.largeTextWrapper h3{
+    font-size: clamp(10px, 5vw, 32px);
+    font-weight: 400;
+}
+
+.wrapperFooter{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 30px;
+}
+
+.wrapperFooter button{
+    background-color: #ffffff;
+    color: rgb(0, 0, 0);
+    border: none;
+    padding: 10px 20px;
+    font-size: 20px;
+    font-weight: 500;
+    border-radius: 10px;
+}
+
+.wrapperFooter button:hover{
+    background-color: #D0CDCD;
+    color: black;
+    cursor: pointer;
+}
+
 @media (max-width: 768px) {
     .leftSide,
     .rightSide {

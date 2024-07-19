@@ -53,13 +53,38 @@ function CanamoConecta() {
               <div className='arrowContainer'>
               <img src="\src\assets\images\Bullseye.png" alt="Bullseye" className='icon'/>
                 <div className='leftSide'>
-                  <p>Al enfocarse exclusivamente en el cáñamo industrial, evita controversias relacionadas
+                  <p>Al enfocarse exclusivamente en el <strong>cáñamo industrial</strong>, evita controversias relacionadas
                   con el uso lúdico del cannabis, aumentando su aceptación y apoyo. </p>
                 </div>
               </div>
 
             </div>
 
+          </div>
+
+          <span className='header'>Nuestros proyectos</span>
+
+          <div className='wrapper'>
+            <div className='shortImageWrapper'>
+              <img src="\src\assets\images\AgendaVerde.png"/>
+            </div>
+            <div className='largeTextWrapper'>
+              <h2>Agenda verde del Cáñamo Industrial en México</h2>
+              <h3>Perspectivas del Cáñamo Industrial en México Rumbo a la Agenda Verde 2030</h3>
+              <p> <br /> Conoce el plan de acción de <strong>AMEEC</strong> como un impulsor clave  para la mejora positiva 
+                de la industria del cáñamo en México. Acompáñanos en la búsqueda de la unión de <strong>agricultores,
+                especialistas, empresarios</strong> nacionales y  extranjeros, <strong>universidades y científicos</strong> para
+                aumentar la conciencia  sobre el potencial del <strong>cáñamo industrial</strong> y abordar sus desafíos para
+                su  desarrollo en México.
+              </p>
+
+              <div className='wrapperFooter'>
+                <div>
+                  <img src="\src\assets\images\UniversidadAutonomaLogo.png"/>
+                </div>
+                <button>Conoce más</button>
+              </div>
+            </div>
           </div>
         
         </div>
