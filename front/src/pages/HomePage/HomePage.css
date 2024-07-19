@@ -65,6 +65,13 @@
   background-color: #EAE6E3;
 }
 
+.objetivo-inferior-div{
+  display: grid;
+  grid-template-columns: 3fr 2fr;
+  height: 300px;
+  background-color: #3E4D3D;
+}
+
 .texto-objetivo-div{
   display: flex;
   flex-direction: column;
@@ -105,4 +112,47 @@
 
 .strongs{
   font-weight: 750;
+}
+
+.texto-obj-inferior-div{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 37px;
+  padding: 45px;
+  padding-left: 65px;
+}
+
+.imgObjetivo{
+  width: 380px;
+  margin-right: 25px;
+}
+
+.mensaje-div{
+  display: grid;
+  grid-template-columns: 2fr 4fr;
+  height: 340px;
+  background-color: #738063;
+}
+
+.imgPresidente{
+  height: 280px;
+  padding-left: 20px;
+}
+
+.texto-mensaje-div{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 30px;
+  padding: 45px;
+  padding-left: 0px;
+  margin-right: 140px;
+}
+
+.NombrePresi{
+  color:white;
+  font-size: 54px;
+  font-weight: 780;
+  font-family: 'Montserrat', sans-serif;
 }

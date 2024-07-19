@@ -6,6 +6,8 @@ import iconoTwitter from '../Proyecto/Twitter.png';
 import iconoLinkedIn from '../Proyecto/Linkedin.png';
 import iconoYoutube from '../Proyecto/Youtube.png';
 import iconoWhats from '../Proyecto/whatsapplogo.png';
+import imagenObjetivo from './ImagenObjetivo.png';
+import imagenPresidente from './Presidente.png';
 
 import './HomePage.css'
 
@@ -49,6 +51,28 @@ function HomePage() {
             <p className='texto-objetivo'>El programa nace de la necesidad de resaltar los usos del <strong className='strongs'> cáñamo industrial</strong> y el impacto que se puede tener en el desarrollo de la comunidad de pueblos originarios llamados <strong className='strongs'> Naayeris o coras</strong>, ubicados en la localidad de <strong className='strongs'>Santa Teresa Del Nayar</strong>.</p>
             <p className='texto-objetivo'>Adicionalmente, como <strong className='strongs'>asociación</strong>, acompañamos al proyecto principal con acciones que atienden el área de <strong className='strongs'>responsabilidad social</strong>. Estas acciones están encaminadas hacia el <strong className='strongs'>desarrollo</strong> de la población, como dotar de un <strong className='strongs'>salón inteligente</strong> con todo el equipamiento necesario para la <strong className='strongs'>capacitación</strong> y regulación a distancia de los <strong className='strongs'>jóvenes (Coras)</strong>.</p>
           </div>
+        </div>
+      </div>
+
+      <div className='objetivo-inferior-div'>
+        <div className='texto-obj-inferior-div'> 
+            <p className='texto-objetivo'> En esta <strong className='strongs'>localidad</strong>, se pretende realizar una <strong className='strongs'>bioconstrucción</strong> a base principalmente de un <strong className='strongs'>block</strong> que se le conoce como <strong className='strongs'>Hempcrete</strong>. La bioconstrucción estará acompañada de <strong className='strongs'>madera</strong>, materia prima que tiene la zona serrana y que se usa en la localidad para la <strong className='strongs'>construcción de sus viviendas</strong>.</p>
+            <p className='texto-objetivo'>Además, buscamos el rescate del <strong className='strongs'>patrimonio cultural</strong> de la <strong className='strongs'>comunidad Naayeri</strong> a través de un centro cultural que tiene la intención de <strong className='strongs'>preservar y conservar su cultura</strong>.</p>
+        </div>
+
+        <div style={{display:'flex', justifyContent: 'center', alignItems:'center'}}>
+          <img src={imagenObjetivo} className='imgObjetivo'/>
+        </div>
+      </div>
+
+      <div className='mensaje-div'>
+        <div style={{display:'flex', justifyContent: 'center', alignItems:'center'}}>
+          <img src={imagenPresidente} className='imgPresidente'/>
+        </div>
+
+        <div className='texto-mensaje-div'>
+          <h1 className='NombrePresi'>Manuel Rios</h1>
+          <p className='texto-objetivo'>Visualice un México más equitativo y con las mismas oportunidades para todos, observando que el sector rural es donde menos oportunidades se tienen. AMEEC es su granito de arena y la forma de retribuir al país todo lo que le ha dado.</p>
         </div>
       </div>
 
