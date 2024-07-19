@@ -8,6 +8,9 @@ import iconoYoutube from '../Proyecto/Youtube.png';
 import iconoWhats from '../Proyecto/whatsapplogo.png';
 import imagenObjetivo from './ImagenObjetivo.png';
 import imagenPresidente from './Presidente.png';
+import imagenEventos from './ImgEventos.png';
+import imagenDonaciones from './ImgDonaciones.png';
+import imagenComunidad from './ImgComunidad.png';
 
 import './HomePage.css'
 
@@ -72,8 +75,24 @@ function HomePage() {
 
         <div className='texto-mensaje-div'>
           <h1 className='NombrePresi'>Manuel Rios</h1>
-          <p className='texto-objetivo'>Visualice un México más equitativo y con las mismas oportunidades para todos, observando que el sector rural es donde menos oportunidades se tienen. AMEEC es su granito de arena y la forma de retribuir al país todo lo que le ha dado.</p>
+          <p className='texto-mensaje'>Visualice un México más <strong className='strongs'>equitativo</strong> y con las mismas oportunidades para todos, observando que el <strong className='strongs'>sector rural</strong> es donde menos oportunidades se tienen. <strong className='strongs'>AMEEC</strong> es su granito de arena y la forma de retribuir al país todo lo que le ha dado.</p>
         </div>
+      </div>
+
+      <div className='secciones-destacadas-div'>
+        <img src={imagenEventos} className='imgDestacadas'/>
+        <div className='texto-destacadas-div'>
+          <h1 className='NombrePresi'> Eventos </h1>
+        </div>
+        <div className='texto-destacadas-div'>
+          <h1 className='NombrePresi'> Donaciones </h1>
+        </div>
+        <img src={imagenDonaciones} className='imgDestacadas'/>
+        <img src={imagenComunidad} className='imgDestacadas'/>
+        <div className='texto-destacadas-div'>
+          <h1 className='NombrePresi'> Comunidad </h1>
+        </div>
+
       </div>
 
 
