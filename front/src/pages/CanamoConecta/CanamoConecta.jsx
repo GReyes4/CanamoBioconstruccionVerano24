@@ -86,6 +86,33 @@ function CanamoConecta() {
               </div>
             </div>
           </div>
+
+          <div className='wrapper'>
+            <div className='largeTextWrapper'>
+              <h2>Bioconstrucción para el desarrollo</h2>
+                <h3>Descubre nuestro proyecto en alianza con el Tec de Monterrey sobre cáñamo industrial.</h3>
+                <p> <br />
+                  En AMEEC, estamos comprometidos con el desarrollo sostenible y la  inclusión de tecnologías
+                  innovadoras en la construcción. Recientemente,  en colaboración con el Departamento de
+                  Arquitectura, Ingenieria civil e  Ingeniería en Desarrollo Sustentable del Tec de Monterrey
+                  Campus Santa  Fe y Campus CDMX, hemos iniciado un emocionante proyecto enfocado en la
+                  construcción sostenible en la comunidad naayeri de Santa Teresa del  Nayar.
+                </p>
+
+                <div className='wrapperFooter'>
+                  <div>
+                    <img src="\src\assets\images\TecMonterreyLogo.png"/>
+                  </div>
+                  <button>Conoce más</button>
+                </div>
+            </div>
+            
+            <div className='shortImageWrapper'>
+              <img src="\src\assets\images\Bioconstruccion.png"/>
+            </div>
+
+
+          </div>
         
         </div>
       </>
