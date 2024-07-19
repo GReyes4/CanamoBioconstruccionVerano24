@@ -2,10 +2,13 @@ import './CanamoConecta.css'
 
 
 import Navbar from '../../GlobalComponents/Navbar/Navbar.jsx';
+import Footer from '../../pages/Proyecto/Footer.jsx';
 
 function CanamoConecta() {
     return (
       <>
+
+      <Navbar />
         <div className='CanamoPage'>
           <div className='backgroundImage'>
             <div className='overlay'>
@@ -119,6 +122,8 @@ function CanamoConecta() {
           </span>
 
         </div>
+
+        <Footer />
       </>
     )
 }
