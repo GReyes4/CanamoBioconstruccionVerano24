@@ -1,16 +1,20 @@
 import Navbar from '../../GlobalComponents/Navbar/Navbar.jsx';
+import Footer from '../Proyecto/Footer.jsx';
 
-import iconoFacebook from '../Proyecto/Facebook.png';
-import iconoInsta from '../Proyecto/Instagram.png';
-import iconoTwitter from '../Proyecto/Twitter.png';
-import iconoLinkedIn from '../Proyecto/Linkedin.png';
-import iconoYoutube from '../Proyecto/Youtube.png';
-import iconoWhats from '../Proyecto/whatsapplogo.png';
+import iconoFacebook from '../Proyecto/images/Facebook.png';
+import iconoInsta from '../Proyecto/images/Instagram.png';
+import iconoTwitter from '../Proyecto/images/Twitter.png';
+import iconoLinkedIn from '../Proyecto/images/Linkedin.png';
+import iconoYoutube from '../Proyecto/images/Youtube.png';
+import iconoWhats from '../Proyecto/images/whatsapplogo.png';
 import imagenObjetivo from './ImagenObjetivo.png';
 import imagenPresidente from './Presidente.png';
 import imagenEventos from './ImgEventos.png';
 import imagenDonaciones from './ImgDonaciones.png';
 import imagenComunidad from './ImgComunidad.png';
+import imgNoticiaSantaFe from './PresentacionSantaFe.png';
+import imgNoticiaIngenieria from './PresentacionIngenieria.png';
+import imgNoticiaArqui from './PresentacionArqui.png';
 
 import { useNavigate} from "react-router-dom";
 
@@ -98,7 +102,31 @@ function HomePage() {
 
       </div>
 
+      <div className='noticias-recientes-div'>
+        <h1 className='titulo-noticias'> Noticias Recientes </h1>
 
+        <div className='carrusel-noticias'>
+          <div className='tarjeta-noticias'>
+            <img src={imgNoticiaSantaFe} className='imgNoticias'/>
+            <h1 className='titulo-card'>Presentación 3 de junio Tec de monterrey Campus Santa fe</h1>
+            <p className='texto-card'>lorem ipsum as sad asdas dasd asd asd asdsadsadasdasdasd asd asd asd asdasdas sad asdasdasdads</p>
+          </div>
+
+          <div className='tarjeta-noticias'>
+            <img src={imgNoticiaIngenieria} className='imgNoticias'/>
+            <h1 className='titulo-card'>Presentación final Ingeniería en desarrollo sustentable Tec de Monterrey Campus CDMX</h1>
+            <p className='texto-card'>lorem ipsum as sad asdas dasd asd asd asdsadsadasdasdasd asd asd asd asdasdas sad asdasdasdads</p>
+          </div>
+
+          <div className='tarjeta-noticias'>
+            <img src={imgNoticiaArqui} className='imgNoticias'/>
+            <h1 className='titulo-card'>Presentación final Arquitectura Tec de Monterrey Campus CDMX</h1>
+            <p className='texto-card'>lorem ipsum as sad asdas dasd asd asd asdsadsadasdasdasd asd asd asd asdasdas sad asdasdasdads</p>
+          </div>
+        </div>
+      </div>
+
+      <Footer/>
       </>
     )
 }
