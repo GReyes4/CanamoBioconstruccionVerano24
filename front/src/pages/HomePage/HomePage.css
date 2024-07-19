@@ -57,3 +57,52 @@
 .encabezado-button:hover {
   background-color: #303c2f;
 }
+
+.objetivo-proyecto-div{
+  display: grid;
+  grid-template-columns: 4fr 5fr;
+  height: 400px;
+  background-color: #EAE6E3;
+}
+
+.texto-objetivo-div{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.fondo-texto-objetivo{
+  display: flex;
+  flex-direction: column;
+  gap: 37px;
+  padding: 35px;
+  padding-right: 45px;
+  border-radius: 60px;
+  border-top-right-radius: 0px;
+  border-bottom-right-radius: 0px;
+  background-color: #3E4D3D;
+}
+
+.titulo-objetivo-div{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.titulo-objetivo{
+  color: #3E4D3D;
+  font-size: 54px;
+  font-weight: 780;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.texto-objetivo{
+  font-size: large;
+  color: #d8d5d2;
+  font-weight: 50;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.strongs{
+  font-weight: 750;
+}

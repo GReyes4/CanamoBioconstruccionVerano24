@@ -19,7 +19,7 @@ import Proyecto from "./pages/Proyecto/Proyecto.jsx";
 
 const router = createBrowserRouter(
   createRoutesFromElements(
-      <Route path="/" element={<Root />}>
+      <Route path="/" element={<Root />} errorElement={<HomePage />}>
         <Route index element={<HomePage />} />
         <Route path="canamo" element={<CanamoConecta />} />
         <Route path="proyecto" element={<Proyecto />} />

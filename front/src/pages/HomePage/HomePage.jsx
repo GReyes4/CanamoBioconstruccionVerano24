@@ -39,6 +39,19 @@ function HomePage() {
         
       </div>
 
+      <div className='objetivo-proyecto-div'>
+        <div className='titulo-objetivo-div'>
+          <h1 className='titulo-objetivo'> Objetivo del <br /> proyecto </h1>
+        </div>
+
+        <div className='texto-objetivo-div'>
+          <div className='fondo-texto-objetivo'>
+            <p className='texto-objetivo'>El programa nace de la necesidad de resaltar los usos del <strong className='strongs'> cáñamo industrial</strong> y el impacto que se puede tener en el desarrollo de la comunidad de pueblos originarios llamados <strong className='strongs'> Naayeris o coras</strong>, ubicados en la localidad de <strong className='strongs'>Santa Teresa Del Nayar</strong>.</p>
+            <p className='texto-objetivo'>Adicionalmente, como <strong className='strongs'>asociación</strong>, acompañamos al proyecto principal con acciones que atienden el área de <strong className='strongs'>responsabilidad social</strong>. Estas acciones están encaminadas hacia el <strong className='strongs'>desarrollo</strong> de la población, como dotar de un <strong className='strongs'>salón inteligente</strong> con todo el equipamiento necesario para la <strong className='strongs'>capacitación</strong> y regulación a distancia de los <strong className='strongs'>jóvenes (Coras)</strong>.</p>
+          </div>
+        </div>
+      </div>
+
 
       </>
     )
