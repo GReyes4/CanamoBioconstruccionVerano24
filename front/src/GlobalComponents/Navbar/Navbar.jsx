@@ -1,50 +1,89 @@
-import {Navbar, NavbarBrand, NavbarContent, NavbarItem, Link, Button} from "@nextui-org/react";
-
+import {Navbar, NavbarBrand, NavbarContent, NavbarItem, DropdownItem, DropdownTrigger, Dropdown, DropdownMenu, Link as NextLink} from "@nextui-org/react";
+import { useNavigate, Link } from "react-router-dom";
 import logoAMEEC from '../../assets/ameec_logo.png';
 
 import './Navbar.css'
 
 function NavBar() {
+  const navigate = useNavigate();
   
     return (
       <>
-      <Navbar className="navbar-container" maxWidth="100%">
-      <NavbarBrand className="navbar-brand" >
-        <img src={logoAMEEC} alt="AMEEC Logo" className="logo-img" />
-      </NavbarBrand>
+      <div className="navbar-wrapper">
+        <Navbar className="navbar-container" maxWidth="100%">
+        <NavbarBrand className="navbar-brand">
+          <img src={logoAMEEC} alt="AMEEC Logo" className="logo-img" onClick={() => navigate("/")}/>
+        </NavbarBrand>
 
-      <NavbarContent className="navbar-content-center" justify="center">
-        <NavbarItem>
-          <Link color="foreground" href="#">
-            Nosotros
-          </Link>
-        </NavbarItem>
-        <NavbarItem>
-          <Link color="foreground" href="#">
-            Proyecto
-          </Link>
-        </NavbarItem>
-        <NavbarItem>
-          <Link color="foreground" href="#">
-            Cáñamo Conecta
-          </Link>
-        </NavbarItem>
-        <NavbarItem>
-          <Link color="foreground" href="#">
-            Naayeri
-          </Link>
-        </NavbarItem>
-      </NavbarContent>
+        <NavbarContent className="navbar-content-center gap-12" justify="center">
+          <NavbarItem>
+            <NextLink className="navbar-link text-lg" color="foreground" as={Link} to="/nosotros">
+              Nosotros
+            </NextLink>
+          </NavbarItem>
+          <NavbarItem>
+            <NextLink className="navbar-link text-lg" color="foreground" as={Link} to="/proyecto">
+              Proyecto
+            </NextLink>
+          </NavbarItem>
+          <NavbarItem>
+            <NextLink className="navbar-link text-lg" color="foreground" as={Link} to="/canamo">
+              Cáñamo Conecta
+            </NextLink>
+          </NavbarItem>
+          <NavbarItem>
+            <NextLink className="navbar-link text-lg" color="foreground" as={Link} to="/naayeri">
+              Naayeri
+            </NextLink>
+          </NavbarItem>
 
-      <NavbarContent className="navbar-content-end" justify="end">
-        <NavbarItem>
-          <Button as={Link} color="primary" href="#" variant="flat">
-            Donar
-          </Button>
-        </NavbarItem>
-      </NavbarContent>
 
-      </Navbar>
+          <NavbarItem>
+            <Dropdown>
+                <DropdownTrigger>
+                  <NextLink className="navbar-link text-lg" color="foreground">
+                    Más ▾
+                  </NextLink>
+                </DropdownTrigger>
+                <DropdownMenu>
+                  <DropdownItem>
+                    <NextLink className="navbar-link text-lg" color="foreground" as={Link} to="/alianzas">
+                      Alianzas
+                    </NextLink>
+                  </DropdownItem>
+                  <DropdownItem>
+                    <NextLink className="navbar-link text-lg" color="foreground" as={Link} to="/galeria">
+                      Galería de fotos
+                    </NextLink>
+                  </DropdownItem>
+                  <DropdownItem>
+                    <NextLink className="navbar-link text-lg" color="foreground" as={Link} to="/presupuesto">
+                      Presupuesto/Donaciones
+                    </NextLink>
+                  </DropdownItem>
+                  <DropdownItem>
+                    <NextLink className="navbar-link text-lg" color="foreground" as={Link} to="/preguntas">
+                      Preguntas frecuentes
+                    </NextLink>
+                  </DropdownItem>
+                </DropdownMenu>
+              </Dropdown>
+          </NavbarItem>
+
+          
+
+        </NavbarContent>
+
+        <NavbarContent className="navbar-content-end" justify="end">
+          <NavbarItem>
+            <button className="donar-button">
+              Donar
+            </button>
+          </NavbarItem>
+        </NavbarContent>
+
+        </Navbar>
+      </div>
       </>
     )
 }

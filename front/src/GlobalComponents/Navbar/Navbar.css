@@ -1,10 +1,12 @@
+.navbar-wrapper {
+    background-color: #EAE6E3;
+}
 
 .navbar-container {
     width: 100% !important;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: #EAE6E3;
     height: 64px; /* Ajusta la altura si es necesario */
     max-width: none !important;
 
@@ -18,6 +20,7 @@
 .logo-img {
     height: 200px; /* Ajusta la altura de la imagen si es necesario */
     margin-right: 8px;
+    cursor: pointer;  
 }
   
 .navbar-content-center {
@@ -30,25 +33,30 @@
     display: flex;
     align-items: center;
 }
-  
-.navbar-item a {
-    font-size: 16px;
-    color: #333;
-}
-  
-.navbar-item a:hover {
-    color: #666;
-}
-  
-.navbar-button {
-    background-color: #4CAF50;
-    color: white;
-    padding: 10px 20px;
-    border-radius: 5px;
+
+.navbar-link {
+    color: #3E4D3D;
+    font-family: 'Montserrat', sans-serif; /* Cambia la fuente */
     text-decoration: none;
-    transition: background-color 0.3s;
 }
-  
-.navbar-button:hover {
-    background-color: #45a049;
+
+.navbar-link:hover {
+    font-weight: 400;
+    color: #4e8664;
+}
+
+.donar-button {
+    margin-right: 8px;
+    background-color: #38473E; /* Color de fondo del botón */
+    color: #EAE6E3;             /* Color del texto */
+    border: none;             /* Sin borde */
+    border-radius: 13px;      /* Bordes redondeados */
+    padding: 13px 40px;       /* Espaciado interno del botón */
+    font-size: 20px;          /* Tamaño del texto */
+    font-family: 'Montserrat';
+    cursor: pointer;          /* Cambiar el cursor al pasar sobre el botón */
+}
+
+.donar-button:hover {
+    background-color: #2e3d34; /* Color de fondo al pasar el ratón */
 }
