@@ -23,6 +23,20 @@ function HomePage() {
           <img src={iconoYoutube} className='social-icon'/>
           <img src={iconoWhats} className='social-icon'/>
         </div>
+
+        <div className='titulo-encabezado-div'>
+          <h1 className='titulo-encabezado'> Bioconstrucción <br /> para el desarrollo </h1>
+        </div>
+
+        <div className='botones-encabezado-div'>
+          <button className="encabezado-button">
+            Contactanos
+          </button>
+          <button className="encabezado-button">
+            Unete al voluntariado
+          </button>
+        </div>
+        
       </div>
 
 

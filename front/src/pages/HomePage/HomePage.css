@@ -1,6 +1,8 @@
 .encabezado-div {
+  display: grid;
+  grid-template-rows: 1fr 3fr 2fr;
   width: 100%;
-  height: 400px;
+  height: 500px;
   background-image: url('./EncabezadoHome.png'); /* Usa la ruta relativa correcta si es necesario */
   background-size: cover; /* Hace que la imagen cubra todo el div */
   background-position: center; /* Centra la imagen */
@@ -18,4 +20,40 @@
 .social-icon{
   height: 30px;
   z-index: 5;
+}
+
+.titulo-encabezado-div{
+  display: flex;
+  justify-content: center;
+}
+
+.titulo-encabezado{
+  color:white;
+  font-size: 80px;
+  font-weight: 700;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.botones-encabezado-div{
+  display: flex;
+  gap: 120px;
+  justify-content: center;
+  align-items: center;
+}
+
+.encabezado-button {
+  margin-right: 8px;
+  height: fit-content;
+  background-color: #3E4D3D;
+  color: #EAE6E3;
+  border: none;
+  border-radius: 13px;
+  padding: 13px 40px;
+  font-size: 20px;
+  font-family: 'Montserrat';
+  cursor: pointer;
+}
+
+.encabezado-button:hover {
+  background-color: #303c2f;
 }
