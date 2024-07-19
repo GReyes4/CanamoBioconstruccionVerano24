@@ -12,9 +12,12 @@ import imagenEventos from './ImgEventos.png';
 import imagenDonaciones from './ImgDonaciones.png';
 import imagenComunidad from './ImgComunidad.png';
 
+import { useNavigate} from "react-router-dom";
+
 import './HomePage.css'
 
 function HomePage() {
+  const navigate = useNavigate();
   
     return (
       <>
@@ -80,16 +83,16 @@ function HomePage() {
       </div>
 
       <div className='secciones-destacadas-div'>
-        <img src={imagenEventos} className='imgDestacadas'/>
-        <div className='texto-destacadas-div'>
+        <img src={imagenEventos} className='imgDestacadas' onClick={() => navigate("/eventos")}/>
+        <div className='texto-destacadas-div' onClick={() => navigate("/eventos")}>
           <h1 className='NombrePresi'> Eventos </h1>
         </div>
-        <div className='texto-destacadas-div'>
+        <div className='texto-destacadas-div' onClick={() => navigate("/donaciones")}>
           <h1 className='NombrePresi'> Donaciones </h1>
         </div>
-        <img src={imagenDonaciones} className='imgDestacadas'/>
-        <img src={imagenComunidad} className='imgDestacadas'/>
-        <div className='texto-destacadas-div'>
+        <img src={imagenDonaciones} className='imgDestacadas' onClick={() => navigate("/donaciones")}/>
+        <img src={imagenComunidad} className='imgDestacadas' onClick={() => navigate("/naayeri")}/>
+        <div className='texto-destacadas-div' onClick={() => navigate("/naayeri")}>
           <h1 className='NombrePresi'> Comunidad </h1>
         </div>
 
