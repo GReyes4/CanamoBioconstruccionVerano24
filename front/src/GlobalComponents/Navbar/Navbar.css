@@ -15,11 +15,13 @@
 .navbar-brand {
     display: flex;
     align-items: center;
+    height: 100%;
   }
   
 .logo-img {
     height: 200px;
     cursor: pointer;  
+    z-index: 4;
 }
   
 .navbar-content-center {
