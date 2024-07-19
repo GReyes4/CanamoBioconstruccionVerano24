@@ -1,6 +1,8 @@
 import './CanamoConecta.css'
 
 
+import Navbar from '../../GlobalComponents/Navbar/Navbar.jsx';
+
 function CanamoConecta() {
     return (
       <>
