@@ -1262,7 +1262,7 @@ video {
 }
 
 .max-w-\[1024px\] {
-  max-width: 1024px;
+  max-width: 100%;
 }
 
 .max-w-\[1280px\] {
