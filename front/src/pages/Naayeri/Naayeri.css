@@ -1,0 +1,71 @@
+.encabezado-naayeri-div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 400px;
+    background-image: url('../HomePage/EncabezadoHome.png'); /* Usa la ruta relativa correcta si es necesario */
+    background-size: cover; /* Hace que la imagen cubra todo el div */
+    background-position: center; /* Centra la imagen */
+    background-repeat: no-repeat; /* Evita que la imagen se repita */
+  }
+
+.titulo-naayeri-encabezado{
+    color:white;
+    font-size: 80px;
+    font-weight: 700;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.conoce-comunidad-div{
+    display: grid;
+    grid-template-rows: 1fr 3fr;
+    height: fit-content;
+    background-color: #3E4D3D;
+}
+
+.conoce-comunidad-titulo{
+    color:white;
+    font-size: 48px;
+    font-weight: 780;
+    font-family: 'Montserrat', sans-serif;
+    padding: 50px;
+    padding-left: 40px;
+    padding-bottom: 10px;
+}
+
+.grid-conoce-comunidad{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding-left: 40px;
+    gap: 45px;
+}
+
+.imgConoceComunidad{
+    width: 90%;
+    height: 80%;
+}
+
+.texto-conoce-comunidad{
+    font-size: large;
+    color: #ebe9e9;
+    font-weight: 50;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.relevancia-div{
+    display: grid;
+    grid-template-rows: 1fr 3fr;
+    height: fit-content;
+    background-color: #EAE6E3;
+}
+
+.relevancia-titulo{
+    color:rgb(0, 0, 0);
+    font-size: 48px;
+    font-weight: 780;
+    font-family: 'Montserrat', sans-serif;
+    padding: 50px;
+    padding-left: 40px;
+    padding-bottom: 10px;
+}
