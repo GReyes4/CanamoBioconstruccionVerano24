@@ -1,5 +1,5 @@
 import './CanamoConecta.css'
-
+//
 
 import Navbar from '../../GlobalComponents/Navbar/Navbar.jsx';
 import Footer from '../../pages/Proyecto/Footer.jsx';
