@@ -10,7 +10,7 @@ function CanamoConecta() {
 
       <Navbar />
         <div className='CanamoPage'>
-          <div className='backgroundImage'>
+          <div className='backgroundImageCanamo'>
             <div className='overlay'>
               <h1>Cáñamo Conecta</h1>
             </div>
@@ -86,7 +86,7 @@ function CanamoConecta() {
               <div className='wrapperFooter'>
                   <img src="\src\assets\images\UniversidadAutonomaLogo.png"/>
 
-                <button>Conoce más</button>
+                <button className='genericButton'>Conoce más</button>
               </div>
             </div>
           </div>
@@ -105,21 +105,23 @@ function CanamoConecta() {
 
                 <div className='wrapperFooter'>
                     <img src="\src\assets\images\TecMonterreyLogo.png"/>
-                  <button>Conoce más</button>
+                  <button className='genericButton'>Conoce más</button>
                 </div>
             </div>
             
             <div className='shortImageWrapper'>
               <img src="\src\assets\images\Bioconstruccion.png"/>
             </div>
-
-
           </div>
         
-          <span className='header'>
-          <iframe src="https://docs.google.com/forms/d/e/1FAIpQLScNiR1w4if0bxEemmcuKKWMprZSLn-ay-tGbC9cKv5nP2a4AQ/viewform?embedded=true" width="640" height="640" frameborder="0" marginheight="0" marginwidth="0">Cargando…</iframe>
 
-          </span>
+          <div className='backgroundImageDonation'>
+            <div className='overlay'>
+              <h1>¿Quieres apoyarnos?</h1>
+              <h3>Puedes hacer una diferencia real en las vidas de aquellos que lo necesitan.</h3>
+              <a href="https://docs.google.com/forms/d/e/1FAIpQLScNiR1w4if0bxEemmcuKKWMprZSLn-ay-tGbC9cKv5nP2a4AQ/viewform"><button className='genericButton'>Unirse</button></a>
+            </div>
+          </div>
 
         </div>
 

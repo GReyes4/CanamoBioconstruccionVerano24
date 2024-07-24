@@ -3,9 +3,18 @@
     
 }
 
-.backgroundImage {
+.backgroundImageCanamo {
     background-image: url('../../assets/images/canamBackgroundImage.png');
-    height: 100vh;
+    height: 85vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.backgroundImageDonation {
+    background-image: url('../../assets/images/donationBackgroundImage.jpg');
+    height: 85vh;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -18,13 +27,16 @@
     left: 0;
     right: 0;
     bottom: 0;
-    background-color: rgba(0, 0, 0, 0.5); 
+    height: 85vh;
+    background-color: rgba(0, 0, 0, 0.7); 
     display: flex;
-    align-items: center;
+    flex-direction: column;
     justify-content: center;
+    align-items: center;
+    gap: 20px;
 }
 
-.overlay h1 {
+.overlay h1, h3 {
     font-optical-sizing: auto;
     color: white;
     font-size: clamp(20px, 20vw, 60px);
@@ -189,7 +201,7 @@
     gap: 20px;
 }
 
-.wrapperFooter button{
+.genericButton{
     background-color: #ffffff;
     color: rgb(0, 0, 0);
     border: none;
@@ -199,7 +211,7 @@
     border-radius: 10px;
 }
 
-.wrapperFooter button:hover{
+.genericButton:hover{
     background-color: #D0CDCD;
     color: black;
     cursor: pointer;
