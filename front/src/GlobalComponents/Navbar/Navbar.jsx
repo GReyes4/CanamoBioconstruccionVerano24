@@ -57,7 +57,7 @@ function NavBar() {
                     </NextLink>
                   </DropdownItem>
                   <DropdownItem>
-                    <NextLink className="navbar-link text-lg" color="foreground" as={Link} to="/presupuesto">
+                    <NextLink className="navbar-link text-lg" color="foreground" as={Link} to="/donaciones">
                       Presupuesto/Donaciones
                     </NextLink>
                   </DropdownItem>
@@ -76,7 +76,7 @@ function NavBar() {
 
         <NavbarContent className="navbar-content-end" justify="end">
           <NavbarItem>
-            <button className="donar-button">
+            <button className="donar-button" onClick={() => navigate("/donaciones")}>
               Donar
             </button>
           </NavbarItem>

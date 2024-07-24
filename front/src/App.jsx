@@ -17,17 +17,24 @@ import CanamoConecta from "./pages/CanamoConecta/CanamoConecta.jsx";
 // Proyecto
 import Proyecto from "./pages/Proyecto/Proyecto.jsx";
 
+// Naayeri
+import Naayeri from "./pages/Naayeri/Naayeri.jsx";
+
 //Alianzas
 import Alianzas from "./pages/Alianzas/Alianzas.jsx";
 
+//Nosotros
+import Nosotros from "./pages/Nosotros/Nosotros.jsx";
+
 const router = createBrowserRouter(
   createRoutesFromElements(
-      <Route path="/" element={<Root />}>
+      <Route path="/" element={<Root />} errorElement={<HomePage />}>
         <Route index element={<HomePage />} />
         <Route path="canamo" element={<CanamoConecta />} />
         <Route path="proyecto" element={<Proyecto />} />
+        <Route path="naayeri" element={<Naayeri />} />
         <Route path="alianzas" element={<Alianzas />} />
-        
+        <Route path="nosotros" element={<Nosotros />} />
       </Route>
   )
 );

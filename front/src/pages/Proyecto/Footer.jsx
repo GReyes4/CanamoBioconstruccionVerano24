@@ -1,12 +1,12 @@
 import React from 'react';
 import styled from 'styled-components';
-import ameec from '../images/ameec.png';
-import facebook from '../images/Facebook.png';
-import twitter from '../images/Twitter.png';
-import instagram from '../images/Instagram.png';
-import linkedin from '../images/Linkedin.png';
-import youtube from '../images/Youtube.png';
-import whatsapp from '../images/whatsapplogo.png';
+import ameec from './images/ameec.png';
+import facebook from './images/Facebook.png';
+import twitter from './images/Twitter.png';
+import instagram from './images/Instagram.png';
+import linkedin from './images/Linkedin.png';
+import youtube from './images/Youtube.png';
+import whatsapp from './images/whatsapplogo.png';
 
 
 const FooterContainer = styled.footer`

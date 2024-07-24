@@ -15,11 +15,13 @@
 .navbar-brand {
     display: flex;
     align-items: center;
+    height: 100%;
   }
   
 .logo-img {
     height: 200px;
     cursor: pointer;  
+    z-index: 4;
 }
   
 .navbar-content-center {
@@ -57,5 +59,6 @@
 }
 
 .donar-button:hover {
-    background-color: #2e3d34;
+    color:#3E4D3D;
+    background-color: #ff9ae6;
 }
