@@ -5,6 +5,7 @@ import videoFondo from './VideoEncabezadoNaayeri.mp4';
 import imagenConoceComunidad from './ConoceComunidad.png';
 import imagenRelevancia from './Relevancia.png';
 import imagenEducacion from './Educacion.png';
+import imagenTradicion from './Tradicion.png';
 
 
 import './Naayeri.css'
@@ -46,12 +47,25 @@ function Naayeri() {
 
       <div className='educacion-div'>
           <h1 className='educacion-titulo'>Educación</h1>
-
         <div className='grid-educacion'>
           <p className='texto-educacion'>Este proyecto tiene como misión transformar a la comunidad naayeri, potenciando las habilidades educativas de sus habitantes. Nos proponemos crear instalaciones de primer nivel, dignas de una educación de excelencia. Además, buscamos mejorar las oportunidades laborales de la comunidad, brindando apoyo y recursos que permitan un futuro más próspero y lleno de posibilidades. </p>
           <img src={imagenEducacion} className='imgConoceComunidad'/>
         </div>
       </div>
+
+      <div className='relevancia-div'>
+        <div style={{display:'flex', justifyContent: 'end'}}>
+          <h1 className='tradicion-titulo'>Tradición</h1>
+        </div>
+        <div className='grid-relevancia'>
+          <img src={imagenTradicion} className='imgConoceComunidad'/>
+          <p className='texto-tradicion'>Queremos crear un espacio vibrante y emotivo que promueva y preserve las ricas tradiciones culturales de los Nayeris. <br/> <br/> 
+          El proyecto contempla la creación de un área dedicada a exhibir y celebrar la cultura Nayeri y sus tradiciones para que este espacio sea un verdadero refugio de aprendizaje y cultura, donde las raíces se mantengan vivas y las nuevas generaciones encuentren inspiración y orgullo en su herencia. <br/> <br/> 
+          Este será un lugar donde, además de recibir una educación integral, se seguirán utilizando los métodos y técnicas tradicionales que han sido parte fundamental de su cultura. Imaginemos un entorno donde el parto tradicional es guiado por las sabias parteras locales, y la medicina herbolaria florece como un legado vivo de conocimiento ancestral.</p>
+        </div>
+      </div>
+
+
 
       <Footer/>
       </>

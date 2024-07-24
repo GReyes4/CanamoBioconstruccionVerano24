@@ -132,3 +132,22 @@
     padding-right: 150px;
     text-align: justify;
 }
+
+.tradicion-titulo{
+    color:rgb(0, 0, 0);
+    font-size: 48px;
+    font-weight: 780;
+    font-family: 'Montserrat', sans-serif;
+    padding-top: 40px;
+    padding-right: 90px;
+}
+
+.texto-tradicion{
+    font-size: large;
+    color: #000000;
+    font-weight: 300;
+    text-align: justify;
+    padding-left: 5px;
+    padding-right: 90px;
+    font-family: 'Montserrat', sans-serif;
+}
