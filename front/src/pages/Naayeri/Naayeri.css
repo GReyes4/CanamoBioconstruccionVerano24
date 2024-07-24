@@ -67,6 +67,7 @@
     grid-template-rows: 1fr 3fr;
     height: fit-content;
     background-color: #EAE6E3;
+    gap: 35px;
 }
 
 .relevancia-titulo{
@@ -77,4 +78,21 @@
     padding: 50px;
     padding-left: 40px;
     padding-bottom: 10px;
+}
+
+.grid-relevancia{
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    padding-left: 70px;
+    gap: 50px;
+}
+
+.texto-relevancia{
+    font-size: large;
+    color: #000000;
+    font-weight: 300;
+    padding-top: 4%;
+    padding-left: 15px;
+    padding-right: 90px;
+    font-family: 'Montserrat', sans-serif;
 }
