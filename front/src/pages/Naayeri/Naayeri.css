@@ -1,0 +1,153 @@
+.encabezado-naayeri-div {
+    position: relative; /* Añade un contexto de posición para el contenido superpuesto */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 400px;
+    overflow: hidden; /* Asegura que el video no sobresalga del div */
+}
+
+.video-fondo {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Asegura que el video cubra todo el div sin distorsionarse */
+    z-index: -1; /* Envía el video al fondo para que el texto esté encima */
+}
+
+.titulo-naayeri-encabezado{
+    color:white;
+    font-size: 80px;
+    font-weight: 700;
+    font-family: 'Montserrat', sans-serif;
+    z-index: 1; /* Asegura que el texto esté encima del video */
+}
+
+.conoce-comunidad-div{
+    display: grid;
+    grid-template-rows: 1fr 3fr;
+    height: fit-content;
+    background-color: #3E4D3D;
+}
+
+.conoce-comunidad-titulo{
+    color:white;
+    font-size: 48px;
+    font-weight: 780;
+    font-family: 'Montserrat', sans-serif;
+    padding: 50px;
+    padding-left: 40px;
+    padding-bottom: 10px;
+}
+
+.grid-conoce-comunidad{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding-left: 40px;
+    gap: 45px;
+}
+
+.imgConoceComunidad{
+    width: 90%;
+    height: 80%;
+}
+
+.texto-conoce-comunidad{
+    font-size: large;
+    color: #ebe9e9;
+    font-weight: 200;
+    text-align: justify;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.relevancia-div{
+    display: grid;
+    grid-template-rows: 1fr 3fr;
+    height: fit-content;
+    background-color: #EAE6E3;
+    gap: 35px;
+}
+
+.relevancia-titulo{
+    color:rgb(0, 0, 0);
+    font-size: 48px;
+    font-weight: 780;
+    font-family: 'Montserrat', sans-serif;
+    padding: 50px;
+    padding-left: 40px;
+    padding-bottom: 10px;
+}
+
+.grid-relevancia{
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    padding-left: 70px;
+    gap: 50px;
+}
+
+.texto-relevancia{
+    font-size: large;
+    color: #000000;
+    font-weight: 300;
+    text-align: justify;
+    padding-top: 4%;
+    padding-left: 15px;
+    padding-right: 90px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.educacion-div{
+    display: grid;
+    grid-template-rows: 1fr 3fr;
+    height: fit-content;
+    background-color: #738063;
+}
+
+.educacion-titulo{
+    color:white;
+    font-size: 48px;
+    font-weight: 780;
+    font-family: 'Montserrat', sans-serif;
+    padding: 50px;
+    padding-left: 80px;
+    padding-bottom: 0px;
+}
+
+.grid-educacion{
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    padding-left: 80px;
+    padding-right: 45px;
+}
+
+.texto-educacion{
+    font-size: large;
+    color: #ebe9e9;
+    font-weight: 200;
+    font-family: 'Montserrat', sans-serif;
+    padding-top: 8%;
+    padding-right: 150px;
+    text-align: justify;
+}
+
+.tradicion-titulo{
+    color:rgb(0, 0, 0);
+    font-size: 48px;
+    font-weight: 780;
+    font-family: 'Montserrat', sans-serif;
+    padding-top: 40px;
+    padding-right: 90px;
+}
+
+.texto-tradicion{
+    font-size: large;
+    color: #000000;
+    font-weight: 300;
+    text-align: justify;
+    padding-left: 5px;
+    padding-right: 90px;
+    font-family: 'Montserrat', sans-serif;
+}

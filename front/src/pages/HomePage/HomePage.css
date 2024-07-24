@@ -107,6 +107,7 @@
   font-size: large;
   color: #d8d5d2;
   font-weight: 50;
+  text-align: justify;
   font-family: 'Montserrat', sans-serif;
 }
 
@@ -162,6 +163,7 @@
   font-size: large;
   color: white;
   font-weight: 50;
+  text-align: justify;
   font-family: 'Montserrat', sans-serif;
 }
 
@@ -241,5 +243,6 @@
 .texto-card{
   padding-left: 10px;
   padding-right: 10px;
+  text-align: justify;
   font-family: 'Montserrat', sans-serif;
 }
