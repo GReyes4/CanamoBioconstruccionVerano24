@@ -26,6 +26,9 @@ import Alianzas from "./pages/Alianzas/Alianzas.jsx";
 //Nosotros
 import Nosotros from "./pages/Nosotros/Nosotros.jsx";
 
+//Donaciones
+import Donaciones from "./pages/Donaciones/Donaciones.jsx";
+
 const router = createBrowserRouter(
   createRoutesFromElements(
       <Route path="/" element={<Root />} errorElement={<HomePage />}>
@@ -35,6 +38,8 @@ const router = createBrowserRouter(
         <Route path="naayeri" element={<Naayeri />} />
         <Route path="alianzas" element={<Alianzas />} />
         <Route path="nosotros" element={<Nosotros />} />
+        
+        <Route path="donaciones" element={<Donaciones />} />
       </Route>
   )
 );
