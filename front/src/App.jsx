@@ -23,6 +23,9 @@ import Naayeri from "./pages/Naayeri/Naayeri.jsx";
 //Alianzas
 import Alianzas from "./pages/Alianzas/Alianzas.jsx";
 
+//Nosotros
+import Nosotros from "./pages/Nosotros/Nosotros.jsx";
+
 //Donaciones
 import Donaciones from "./pages/Donaciones/Donaciones.jsx";
 
@@ -34,6 +37,7 @@ const router = createBrowserRouter(
         <Route path="proyecto" element={<Proyecto />} />
         <Route path="naayeri" element={<Naayeri />} />
         <Route path="alianzas" element={<Alianzas />} />
+        <Route path="nosotros" element={<Nosotros />} />
         
         <Route path="donaciones" element={<Donaciones />} />
       </Route>

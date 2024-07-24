@@ -151,3 +151,19 @@
     padding-right: 90px;
     font-family: 'Montserrat', sans-serif;
 }
+
+.grid-invernadero{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding-left: 40px;
+    gap: 70px;
+}
+
+.texto-invernadero{
+    font-size: large;
+    color: #ebe9e9;
+    font-weight: 200;
+    text-align: justify;
+    font-family: 'Montserrat', sans-serif;
+    padding-top: 7%;
+}
