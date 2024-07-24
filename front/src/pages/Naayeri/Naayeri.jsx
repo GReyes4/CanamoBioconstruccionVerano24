@@ -4,6 +4,7 @@ import Footer from '../Proyecto/Footer.jsx';
 import videoFondo from './VideoEncabezadoNaayeri.mp4';
 import imagenConoceComunidad from './ConoceComunidad.png';
 import imagenRelevancia from './Relevancia.png';
+import imagenEducacion from './Educacion.png';
 
 
 import './Naayeri.css'
@@ -40,6 +41,15 @@ function Naayeri() {
           <img src={imagenRelevancia} className='imgConoceComunidad'/>
           <p className='texto-relevancia'>Utilizando materiales eco sostenibles y ecológicos queremos contribuir a la realización de una edificación de bajo impacto ambiental, la cual tenga como objetivo principal el desarrollo de habilidades educativas y laborales a través de talleres. <br/> <br/> 
           También busca ser un espacio dedicado a proteger y preservar la salud, las tradiciones y saberes de las personas de pueblos originarios, en AMEEC nos enfocándonos principalmente en realizar un espacio que cubra las atenciones educativas y laborales dentro de la comunidad impactada.</p>
+        </div>
+      </div>
+
+      <div className='educacion-div'>
+          <h1 className='educacion-titulo'>Educación</h1>
+
+        <div className='grid-educacion'>
+          <p className='texto-educacion'>Este proyecto tiene como misión transformar a la comunidad naayeri, potenciando las habilidades educativas de sus habitantes. Nos proponemos crear instalaciones de primer nivel, dignas de una educación de excelencia. Además, buscamos mejorar las oportunidades laborales de la comunidad, brindando apoyo y recursos que permitan un futuro más próspero y lleno de posibilidades. </p>
+          <img src={imagenEducacion} className='imgConoceComunidad'/>
         </div>
       </div>
 
