@@ -17,6 +17,12 @@ import CanamoConecta from "./pages/CanamoConecta/CanamoConecta.jsx";
 // Proyecto
 import Proyecto from "./pages/Proyecto/Proyecto.jsx";
 
+// Naayeri
+import Naayeri from "./pages/Naayeri/Naayeri.jsx";
+
+//Alianzas
+import Alianzas from "./pages/Alianzas/Alianzas.jsx";
+
 //Donaciones
 import Donaciones from "./pages/Donaciones/Donaciones.jsx";
 
@@ -26,6 +32,9 @@ const router = createBrowserRouter(
         <Route index element={<HomePage />} />
         <Route path="canamo" element={<CanamoConecta />} />
         <Route path="proyecto" element={<Proyecto />} />
+        <Route path="naayeri" element={<Naayeri />} />
+        <Route path="alianzas" element={<Alianzas />} />
+        
         <Route path="donaciones" element={<Donaciones />} />
       </Route>
   )

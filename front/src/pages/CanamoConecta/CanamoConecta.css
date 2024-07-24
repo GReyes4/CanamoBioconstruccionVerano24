@@ -1,0 +1,267 @@
+.CanamoPage {
+    font-family: "Montserrat", sans-serif;  
+    
+}
+
+.backgroundImageCanamo {
+    background-image: url('../../assets/images/canamBackgroundImage.png');
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.backgroundImageDonation {
+    background-image: url('../../assets/images/donationBackgroundImage.jpg');
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7); 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.overlay h1, h3 {
+    font-optical-sizing: auto;
+    color: white;
+    font-size: clamp(20px, 20vw, 60px);
+    font-weight: 700;
+    text-align: center;
+}
+
+.subtitle{
+    display: flex;
+    width: 100%;
+    background-color: #D0CDCD;
+    padding: 20px 15%;
+    text-align: center;
+    justify-content: center;
+    font-size: clamp(10px, 5vw, 25px);
+}
+
+.cañamoContent{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #eae6e3;
+    padding: 30px;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+    border-radius: 80px;
+    border: 3px solid #D0CDCD;
+    padding: 30px 10%;
+    text-align: justify;
+}
+
+.arrowContainer{
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.leftSide{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    align-items: center;
+}
+
+.leftside img, .rightSide img{
+    width: 100%;
+}
+
+.leftSide h2{
+    font-weight: 700;
+    font-size: clamp(40px, 5vw, 54px);
+    text-align: center;
+
+}
+
+.rightSide{
+    display: flex;
+    width: 50%;
+    justify-content: space-around;
+}
+
+.container p{
+    font-size: clamp(12px, 4vw, 24px);
+}
+
+.icon{
+    display: flex;
+    justify-content: center;
+    width: 200px;
+    height: 200px;
+
+}
+
+.header{
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+    padding: 30px;
+    font-size: 40px;
+    font-weight: 700;
+    background-color: #3E4D3D;
+    color: white;
+}
+
+.wrapper{
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+}
+
+.wrapper p{
+    font-size: clamp(12px, 2vw, 24px);
+    text-align: justify;
+}
+
+.shortImageWrapper{
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.shortTextWrapper{
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+    justify-content: space-around;
+    background-color: black;
+    color: white;
+    padding: 20px;
+}
+
+.largeImageWrapper{
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+    align-items: center;
+    justify-content: space-around;
+
+}
+
+.shortImageWrapper img{
+    width: 100%;
+    height: 100%;
+}
+
+.largeTextWrapper{
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+    justify-content: space-around;
+    background-color: black;
+    color: white;
+    padding: 20px;
+}
+
+.largeTextWrapper h2{
+    font-size: clamp(25px, 4vw, 40px);
+    font-weight: 600;
+}
+
+.largeTextWrapper h3{
+    font-size: clamp(10px, 5vw, 32px);
+    font-weight: 400;
+}
+
+.wrapperFooter{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 30px;
+    gap: 20px;
+}
+
+.genericButton{
+    background-color: #ffffff;
+    color: rgb(0, 0, 0);
+    border: none;
+    padding: 10px 20px;
+    font-size: 20px;
+    font-weight: 500;
+    border-radius: 10px;
+}
+
+.genericButton:hover{
+    background-color: #D0CDCD;
+    color: black;
+    cursor: pointer;
+}
+
+.iframe-container {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    padding-top: 56.25%; /* 16:9 Aspect Ratio */
+  }
+  .iframe-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: none;
+  }
+
+@media (max-width: 768px) {
+    .leftSide,
+    .rightSide {
+        width: 100%;
+    }
+
+    .rightSide img{
+        display: none;
+    }
+
+    .icon {
+        order: 2;
+    }
+
+    .leftSide p {
+        order: 1;
+    }
+}
+
+@media (max-width: 960px) {
+    .largeTextWrapper{
+        width: 100%;
+    }
+    .shortImageWrapper{
+        display: none;
+    }
+}
