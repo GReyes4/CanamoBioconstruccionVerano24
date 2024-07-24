@@ -6,6 +6,8 @@ import imagenConoceComunidad from './ConoceComunidad.png';
 import imagenRelevancia from './Relevancia.png';
 import imagenEducacion from './Educacion.png';
 import imagenTradicion from './Tradicion.png';
+import imagenInvernadero from './Invernadero.png';
+
 
 
 import './Naayeri.css'
@@ -65,6 +67,14 @@ function Naayeri() {
         </div>
       </div>
 
+      <div className='conoce-comunidad-div'>
+        <h1 className='conoce-comunidad-titulo'>Invernadero</h1>
+        <div className='grid-invernadero'>
+          <p className='texto-invernadero'>Los viveros en escuelas ofrecen múltiples beneficios tanto educativos como ambientales, emocionales y sociales. Los viveros pueden servir como puntos de conexión entre la escuela y la comunidad, mediante proyectos conjuntos y eventos escolares. <br/> <br/> 
+          Desarrollar proyectos de investigación donde los estudiantes puedan experimentar con diferentes tipos de plantas y técnicas de cultivo, no solo enriquecen la experiencia educativa, sino que también aportan beneficios duraderos para los estudiantes, la comunidad y el medio ambiente. </p>
+          <img src={imagenInvernadero} className='imgConoceComunidad'/>
+        </div>
+      </div>
 
 
       <Footer/>
