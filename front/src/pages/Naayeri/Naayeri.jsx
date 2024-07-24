@@ -2,6 +2,7 @@ import Navbar from '../../GlobalComponents/Navbar/Navbar.jsx';
 import Footer from '../Proyecto/Footer.jsx';
 
 import imagenConoceComunidad from './ConoceComunidad.png';
+import videoFondo from './VideoEncabezadoNaayeri.mp4'; // Asegúrate de que la ruta sea correcta
 
 import './Naayeri.css'
 
@@ -11,6 +12,10 @@ function Naayeri() {
       <>
       <Navbar />
       <div className="encabezado-naayeri-div" >
+        <video className="video-fondo" autoPlay loop muted>
+          <source src={videoFondo} type="video/mp4" />
+            Tu navegador no soporta la reproducción de video.
+        </video>
         <h1 className='titulo-naayeri-encabezado'> Comunidad Naayeri </h1>
       </div>
 
