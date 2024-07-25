@@ -57,6 +57,7 @@
   font-size: 20px;
   font-family: 'Montserrat';
   cursor: pointer;
+  transition: background-color 0.3s ease;
 }
 
 .encabezado-button:hover {
@@ -193,6 +194,7 @@
   justify-content: center;
   align-items: center;
   cursor: pointer;
+  transition: background-color 0.3s ease-in-out;
 }
 
 .texto-destacadas-div:hover{

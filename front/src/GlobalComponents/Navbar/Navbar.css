@@ -56,10 +56,13 @@
     font-size: 20px;
     font-family: 'Montserrat';
     cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+    transition: font-size 0.3s ease-in-out;
 }
 
 .donar-button:hover {
     color: #3E4D3D;
+    font-size: 21px;
     background-color: #ff9ae6;
 }
 
