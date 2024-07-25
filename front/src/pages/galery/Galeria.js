@@ -52,21 +52,33 @@ const AlbumContainer = styled.div`
 const Album = styled.div`
   cursor: pointer;
   text-align: center;
-  img {
-    width: 150px;
-    height: 100px;
-    object-fit: cover;
-    margin-bottom: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 2px  gray;
+  padding: 25px;
+
+  .images {
+    display: flex;
+    gap: 8px;
+
+    img {
+      width: 120px;
+      height: 170px;
+      object-fit: cover;
+    }
   }
+
   p {
     font-weight: 400;
     margin: 0;
     white-space: pre-line;
+    font-size: 1.2em
   }
 `;
 
 const SelectedAlbumTitle = styled.h3`
-  font-size: 1.5em;
+  font-size: 2em;
   margin-bottom: 0px;
   padding-top: 20px;
 `;
@@ -98,7 +110,8 @@ const Arrow = styled.div`
 const Indicators = styled.div`
   display: flex;
   justify-content: center;
-  margin-top: 10px;
+  margin-top: -20px;
+  padding-bottom: 100px;
 `;
 
 const Indicator = styled.div`
@@ -108,6 +121,7 @@ const Indicator = styled.div`
   background-color: ${(props) => (props.active ? '#000' : '#ccc')};
   border-radius: 50%;
   display: inline-block;
+
 `;
 
 const ImageContainer = styled.div`
@@ -117,11 +131,12 @@ const ImageContainer = styled.div`
   justify-content: center;
   align-items: center;
   overflow: hidden;
-  padding: 38px;
+  padding: 48px;
 
   img {
     max-width: 90%;
     max-height: 90%;
+    padding-bottom: 100px;
   }
 `;
 
@@ -134,7 +149,7 @@ const Galeria = () => {
     },
     {
       title: '4.2 Presentación \nFinal Ingeniería',
-      images: [i1, i2, i3, i4, i5, i6, i7],
+      images: [i4, i5, i6, i7],
       videos: [iv1, iv2]
     },
     {
@@ -173,12 +188,15 @@ const Galeria = () => {
   return (
     <GaleriaContainer>
       <Header />
-        <Bar />
+      <Bar />
       <Title>Eventos</Title>
       <AlbumContainer>
         {albums.map((album) => (
           <Album key={album.title} onClick={() => handleAlbumClick(album)}>
-            <img src={album.images[0]} alt={album.title} />
+            <div className="images">
+              <img src={album.images[0]} alt={album.title} />
+              <img src={album.images[2]} alt={album.title} />
+            </div>
             <p>{album.title}</p>
           </Album>
         ))}
@@ -196,17 +214,18 @@ const Galeria = () => {
         </Carousel>
         <Arrow left onClick={prevImage}><FaArrowLeft size={30} /></Arrow>
         <Arrow onClick={nextImage}><FaArrowRight size={30} /></Arrow>
+        
         <Indicators>
-          {selectedAlbum.images.map((_, idx) => (
+          {/*{selectedAlbum.images.map((_, idx) => (
             <Indicator key={idx} active={idx === imageIndex} />
-          ))}
+          ))}*/}
         </Indicators>
       </CarouselContainer>
       <CarouselContainer>
         <Carousel style={{ transform: `translateX(-${videoIndex * 100}%)` }}>
           {selectedAlbum.videos.map((video, idx) => (
             <CarouselItem key={idx}>
-              <video src={video} controls style={{ width: '85%' }} />
+              <video src={video} controls style={{ width: '82%' }} />
             </CarouselItem>
           ))}
         </Carousel>
