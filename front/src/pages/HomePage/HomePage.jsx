@@ -28,12 +28,25 @@ function HomePage() {
       <Navbar />
       <div className="encabezado-div" >
         <div className='redes-sociales-div'>
-          <img src={iconoFacebook} className='social-icon'/>
-          <img src={iconoInsta} className='social-icon'/>
-          <img src={iconoTwitter} className='social-icon'/>
-          <img src={iconoLinkedIn} className='social-icon'/>
-          <img src={iconoYoutube} className='social-icon'/>
-          <img src={iconoWhats} className='social-icon'/>
+        <a href="https://www.facebook.com/p/AMEEC-100082913041304/" target="_blank" rel="noopener noreferrer">
+        <img src={iconoFacebook} className='social-icon' alt='Facebook' />
+        </a>
+        <a href="https://www.instagram.com/ameec.ac/?hl=es" target="_blank" rel="noopener noreferrer">
+        <img src={iconoInsta} className='social-icon' alt='Instagram' />
+        </a>
+        <a href='https://twitter.com/AMEEC_ONG/' target='_blank' rel='noopener noreferrer'>
+        <img src={iconoTwitter} className='social-icon' alt='Twitter' />
+        </a>
+        <a href='https://mx.linkedin.com/company/ameec' target='_blank' rel='noopener noreferrer'>
+        <img src={iconoLinkedIn} className='social-icon' alt='LinkedIn' />
+        </a>
+        <a href="https://www.youtube.com/@ameec.ac.
+        " target="_blank" rel="noopener noreferrer">
+        <img src={iconoYoutube} className='social-icon' alt='YouTube' />
+        </a>
+        <a href='https://wa.me/523334988518' target='_blank' rel='noopener noreferrer'>
+        <img src={iconoWhats} className='social-icon' alt='WhatsApp' />
+        </a>
         </div>
 
         <div className='titulo-encabezado-div'>
