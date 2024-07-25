@@ -9,28 +9,27 @@
     align-items: center;
     height: 64px;
     max-width: none !important;
-
 }
 
 .navbar-brand {
     display: flex;
     align-items: center;
     height: 100%;
-  }
-  
+}
+
 .logo-img {
     height: 70%;
     width: auto;
-    cursor: pointer;  
+    cursor: pointer;
     z-index: 4;
 }
-  
+
 .navbar-content-center {
     display: flex;
     gap: 16px;
     flex-grow: 1;
 }
-  
+
 .navbar-content-end {
     display: flex;
     align-items: center;
@@ -60,6 +59,21 @@
 }
 
 .donar-button:hover {
-    color:#3E4D3D;
+    color: #3E4D3D;
     background-color: #ff9ae6;
+}
+
+.dropdown-button {
+    background: none;
+    border: none;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    text-align: left;
+    cursor: pointer;
+}
+
+.dropdown-button:hover .navbar-link {
+    font-weight: 400;
+    color: #4e8664;
 }

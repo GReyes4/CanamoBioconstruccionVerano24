@@ -37,7 +37,6 @@ function NavBar() {
             </NextLink>
           </NavbarItem>
 
-
           <NavbarItem>
             <Dropdown>
                 <DropdownTrigger>
@@ -47,31 +46,36 @@ function NavBar() {
                 </DropdownTrigger>
                 <DropdownMenu>
                   <DropdownItem>
-                    <NextLink className="navbar-link text-lg" color="foreground" as={Link} to="/alianzas">
-                      Alianzas
-                    </NextLink>
+                    <button className="dropdown-button" onClick={() => navigate("/alianzas")}>
+                      <NextLink className="navbar-link text-lg" color="foreground" as={Link} to="/alianzas">
+                        Alianzas
+                      </NextLink>
+                    </button>
                   </DropdownItem>
                   <DropdownItem>
-                    <NextLink className="navbar-link text-lg" color="foreground" as={Link} to="/galeria">
-                      Galería de fotos
-                    </NextLink>
+                    <button className="dropdown-button" onClick={() => navigate("/galeria")}>
+                      <NextLink className="navbar-link text-lg" color="foreground" as={Link} to="/galeria">
+                        Galería de fotos
+                      </NextLink>
+                    </button>
                   </DropdownItem>
                   <DropdownItem>
-                    <NextLink className="navbar-link text-lg" color="foreground" as={Link} to="/donaciones">
-                      Presupuesto/Donaciones
-                    </NextLink>
+                    <button className="dropdown-button" onClick={() => navigate("/donaciones")}>
+                      <NextLink className="navbar-link text-lg" color="foreground" as={Link} to="/donaciones">
+                        Presupuesto/Donaciones
+                      </NextLink>
+                    </button>
                   </DropdownItem>
                   <DropdownItem>
-                    <NextLink className="navbar-link text-lg" color="foreground" as={Link} to="/preguntas">
-                      Preguntas frecuentes
-                    </NextLink>
+                    <button className="dropdown-button" onClick={() => navigate("/preguntas")}>
+                      <NextLink className="navbar-link text-lg" color="foreground" as={Link} to="/preguntas">
+                        Preguntas frecuentes
+                      </NextLink>
+                    </button>
                   </DropdownItem>
                 </DropdownMenu>
               </Dropdown>
           </NavbarItem>
-
-          
-
         </NavbarContent>
 
         <NavbarContent className="navbar-content-end" justify="end">
