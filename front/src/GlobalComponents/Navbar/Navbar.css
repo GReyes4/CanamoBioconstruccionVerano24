@@ -19,7 +19,8 @@
   }
   
 .logo-img {
-    height: 200px;
+    height: 70%;
+    width: auto;
     cursor: pointer;  
     z-index: 4;
 }

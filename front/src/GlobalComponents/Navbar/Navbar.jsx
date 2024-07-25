@@ -10,7 +10,7 @@ function NavBar() {
     return (
       <>
       <div className="navbar-wrapper">
-        <Navbar className="navbar-container" maxWidth="100%">
+        <Navbar className="navbar-container" >
         <NavbarBrand className="navbar-brand">
           <img src={logoAMEEC} alt="AMEEC Logo" className="logo-img" onClick={() => navigate("/")}/>
         </NavbarBrand>

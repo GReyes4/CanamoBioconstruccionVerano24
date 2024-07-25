@@ -42,11 +42,13 @@ function HomePage() {
 
         <div className='botones-encabezado-div'>
           <button className="encabezado-button">
-            Contactanos
+            Contáctanos
           </button>
-          <button className="encabezado-button">
-            Unete al voluntariado
-          </button>
+          <a href="https://negocios360.my.canva.site/copia-de-voluntariado" target='blank'>
+            <button className="encabezado-button">
+              Unete al voluntariado
+            </button>
+          </a>
         </div>
         
       </div>
