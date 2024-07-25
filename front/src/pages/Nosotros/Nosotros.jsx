@@ -3,6 +3,10 @@ import Footer from '../Proyecto/Footer.jsx';
 import React from 'react';
 import './Nosotros.css';
 
+import RubenImagen from '../../assets/images/profeRuben.jpg';
+import ClaudiaImagen from '../../assets/images/mcClaudia.jpg';
+import BogdanImagen from '../../assets/images/arqBogdan.png';
+
 const Nosotros = () => {
   return (
     <div className="Nosotros">
@@ -13,7 +17,7 @@ const Nosotros = () => {
             <h1>Breve Historia de AMEEC</h1>
             <p>
               <br /> 
-              Somos una <span className="montserrat-alternate">asociación civil</span>  
+              Somos una <span className="montserrat-alternate">asociación civil </span>  
               sin fines de lucro, donde nuestro 
               principal enfoque es <span className="montserrat-alternate">investigar y promover</span> el conocimiento sobre 
               el cannabis <span className="montserrat-alternate">"Cáñamo Medicinal e Industrial"</span> y sus diversos usos.
@@ -37,20 +41,28 @@ const Nosotros = () => {
           </div>
         </section>
         <section className="gallery-section">
-          <h2>Title</h2>
-          <div className="gallery">
-            <div className="gallery-item">
-              <img src="path/to/image1.jpg" alt="Image 1" />
-              <button>Button</button>
-            </div>
-            <div className="gallery-item">
-              <img src="path/to/image2.jpg" alt="Image 2" />
-              <button>Button</button>
-            </div>
-            <div className="gallery-item">
-              <img src="path/to/image3.jpg" alt="Image 3" />
-              <button>Button</button>
-            </div>
+          <h1>Profesores involucrados en el programa</h1>
+          <div className='gallery'>
+            <a href="https://www.linkedin.com/in/ruben-ahumada-lazo-32373168/?originalSubdomain=mx" target='blank'>
+              <div className='gallery-item'>
+                <img src={RubenImagen} alt="Profesor Rubén"/>
+                <h2>Dr. Ruben Ahumada-Lazo</h2>
+              </div>
+            </a>
+            <a href="https://www.researchgate.net/profile/Claudia-Compean-Gonzalez" target='blank'>
+              <div className='gallery-item'>
+                <img src={ClaudiaImagen} alt="M.C Claudia"/>
+                <h2>M.C. Claudia Lorena Compeán González</h2>
+              </div>
+            </a>
+
+            <a href="https://www.linkedin.com/in/bogdan-mircea-ilie/" target='blank'>
+              <div className='gallery-item'>
+                <img src={BogdanImagen} alt="Arq. Bogdan"/>
+                <h2>Arq. Bogdan Mircea Ilie</h2>
+              </div>
+            </a>
+
           </div>
         </section>
       </main>
