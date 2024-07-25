@@ -54,14 +54,17 @@ function HomePage() {
         </div>
 
         <div className='botones-encabezado-div'>
-          <button className="encabezado-button">
-            Contáctanos
-          </button>
-          <a href="https://negocios360.my.canva.site/copia-de-voluntariado" target='blank'>
+          <a href="https://docs.google.com/forms/d/e/1FAIpQLScL-U1ll5rtee-IWNtIo_L4gKbqyW7UxO3gysfpdWk_zsVpPQ/viewform?usp=sharing" target='blank'>
             <button className="encabezado-button">
-              Unete al voluntariado
+              Contáctanos
             </button>
           </a>
+
+          <a href="https://negocios360.my.canva.site/copia-de-voluntariado" target='blank'>
+            <button className="encabezado-button">
+              Únete al voluntariado
+            </button>
+          </a> 
         </div>
         
       </div>
