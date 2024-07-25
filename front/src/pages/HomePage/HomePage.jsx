@@ -54,7 +54,7 @@ function HomePage() {
         </div>
 
         <div className='botones-encabezado-div'>
-          <a href="https://docs.google.com/forms/d/e/1FAIpQLScL-U1ll5rtee-IWNtIo_L4gKbqyW7UxO3gysfpdWk_zsVpPQ/viewform?usp=sharing" target='blank'>
+          <a href="https://docs.google.com/forms/d/e/1FAIpQLScNiR1w4if0bxEemmcuKKWMprZSLn-ay-tGbC9cKv5nP2a4AQ/viewform" target='blank'>
             <button className="encabezado-button">
               Contáctanos
             </button>
