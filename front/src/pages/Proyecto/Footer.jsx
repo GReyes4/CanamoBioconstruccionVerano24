@@ -98,12 +98,24 @@ const Footer = () => {
       </FooterContent>
 
       <SocialIcons>
-        <SocialIcon src={facebook} alt="Facebook" />
-        <SocialIcon src={twitter} alt="Twitter" />
-        <SocialIcon src={instagram} alt="Instagram" />
-        <SocialIcon src={linkedin} alt="LinkedIn" />
-        <SocialIcon src={youtube} alt="YouTube" />
-        <SocialIcon src={whatsapp} alt="WhatsApp" />
+        <a href="https://www.facebook.com/p/AMEEC-100082913041304/" target="_blank" rel="noopener noreferrer">
+          <SocialIcon src={facebook} alt="Facebook" />
+        </a>
+        <a href='https://twitter.com/AMEEC_ONG/' target='_blank' rel='noopener noreferrer'>
+          <SocialIcon src={twitter} alt="Twitter" />
+        </a>
+        <a href="https://www.instagram.com/ameec.ac/?hl=es" target="_blank" rel="noopener noreferrer">
+          <SocialIcon src={instagram} alt="Instagram" />
+        </a>
+        <a href='https://mx.linkedin.com/company/ameec' target='_blank' rel='noopener noreferrer'>
+          <SocialIcon src={linkedin} alt="LinkedIn" />
+        </a>
+        <a href="https://www.youtube.com/@ameec.ac." target="_blank" rel="noopener noreferrer">
+          <SocialIcon src={youtube} alt="YouTube" />
+        </a>
+        <a href='https://wa.me/523334988518' target='_blank' rel='noopener noreferrer'>
+          <SocialIcon src={whatsapp} alt="WhatsApp" />
+        </a>  
       </SocialIcons>
     </FooterContainer>
   );
