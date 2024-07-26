@@ -20,19 +20,19 @@ import Proyecto from "./pages/Proyecto/ProyectBio.jsx";
 // Naayeri
 import Naayeri from "./pages/Naayeri/Naayeri.jsx";
 
-//Nosotros
+// Nosotros
 import Nosotros from "./pages/Nosotros/Nosotros.jsx";
 
-//Alianzas
+// Alianzas
 import Alianzas from "./pages/Alianzas/Alianzas.jsx";
 
-//Galeria
+// Galeria
 import Galeria from "./pages/galery/Galeria.jsx";
 
-//Donaciones
+// Donaciones
 import Donaciones from "./pages/Donaciones/Donaciones.jsx";
 
-//Preguntas frecuentes
+// Preguntas frecuentes
 import Preguntas from "./pages/faq/Faq.jsx";
 
 const router = createBrowserRouter(
@@ -55,4 +55,4 @@ function App() {
   return <RouterProvider router={router} />;
 }
 
-export default App
+export default App;
