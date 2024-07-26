@@ -119,7 +119,7 @@ function CanamoConecta() {
             <div className='overlay'>
               <h1>¿Quieres apoyarnos?</h1>
               <h3>Puedes hacer una diferencia real en las vidas de aquellos que lo necesitan.</h3>
-              <a href="https://docs.google.com/forms/d/e/1FAIpQLScL-U1ll5rtee-IWNtIo_L4gKbqyW7UxO3gysfpdWk_zsVpPQ/viewform?usp=sharing" target='blank'>
+              <a href="https://docs.google.com/forms/d/e/1FAIpQLScNiR1w4if0bxEemmcuKKWMprZSLn-ay-tGbC9cKv5nP2a4AQ/viewform" target='blank'>
                 <button className='genericButton'>Unirse</button>
               </a>
             </div>

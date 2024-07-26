@@ -14,28 +14,49 @@ const FooterContainer = styled.footer`
   color: #fff;
   padding: 20px;
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
+  flex-wrap: wrap;
+
+  @media (max-width: 1200px) {
+  
+    gap: 40px;
+
+  }
+
 `;
 
 
 const FooterContent = styled.div`
   display: flex;
-  flex: 1;
-  justify-content: center;
+  flex-wrap: wrap;
+  justify-content: space-around;
   gap: 40px; 
+
+
+
 `;
 
 
 const FooterLinks = styled.div`
   display: flex;
   gap: 40px; 
+
+  @media (max-width: 500px) {
+  
+    text-align: start;
+    justify-content: start;
+    flex-direction: column;
+
+  }
+
 `;
 
 
 const FooterColumn = styled.div`
   display: flex;
   flex-direction: column;
+  flex-wrap: wrap;
   gap: 10px;
 `;
 
@@ -43,13 +64,12 @@ const FooterColumn = styled.div`
 const SocialIcons = styled.div`
   display: flex;
   gap: 10px; 
-    margin-right: 80px;
+
 `;
 
 
 const LogoImage = styled.img`
   height: 70px; 
-  margin-left: 80px;
 `;
 
 

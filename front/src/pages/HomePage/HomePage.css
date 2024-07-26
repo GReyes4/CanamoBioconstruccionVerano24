@@ -253,3 +253,27 @@
   text-align: justify;
   font-family: 'Montserrat', sans-serif;
 }
+
+@media (max-width: 830px){
+  .encabezado-div {
+    grid-template-rows: 1fr 2fr 2fr 1fr;
+  }
+
+  .titulo-encabezado-div{
+    height: fit-content;
+  }
+
+  .titulo-encabezado{
+    font-size: 8vw;
+  }
+
+  .botones-encabezado-div{
+    gap: 7vw;
+    flex-wrap: wrap;
+  }
+
+  .encabezado-button {
+    margin-right: 1vw;
+    height: fit-content;
+  }
+}

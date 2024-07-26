@@ -327,7 +327,7 @@ Estamos comprometidos a continuar con este esfuerzo, asegurando que cada nueva i
         </ContactInfo>
         </ContactContainer>
       </FAQContainer>
-      
+      <Footer/>
     </div>
   );
 };
