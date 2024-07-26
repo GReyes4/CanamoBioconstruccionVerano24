@@ -155,9 +155,9 @@
   justify-content: center;
   gap: 27px;
   padding: 45px;
-  padding-left: 10px;
+  padding-left: 4vw;
   padding-bottom: 60px;
-  margin-right: 140px;
+  margin-right: 11vw;
 }
 
 .NombrePresi{
@@ -291,5 +291,22 @@
 
   .imgObjetivo{
     width: 40vw;
+  }
+
+  .mensaje-div{
+    display: flex;
+    padding-top: 5vw;
+    flex-direction: column;
+    height: fit-content;
+    background-color: #738063;
+  }
+
+  .texto-mensaje-div{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    margin-right: 0px;
   }
 }
