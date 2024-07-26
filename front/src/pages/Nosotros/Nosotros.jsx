@@ -6,6 +6,7 @@ import './Nosotros.css';
 import RubenImagen from '../../assets/images/profeRuben.jpg';
 import ClaudiaImagen from '../../assets/images/mcClaudia.jpg';
 import BogdanImagen from '../../assets/images/arqBogdan.png';
+import Fundadores from '../Nosotros/Fundadores.png';
 
 const Nosotros = () => {
   const handleRefresh = () => {
@@ -33,7 +34,7 @@ const Nosotros = () => {
             </p>
           </div>
           <div className="image-section">
-            <img src="/src/assets/images/Fundadores.png" alt="Fundadores" />
+            <img src={Fundadores} alt="Fundadores" />
           </div>
         </section>
         <section className="input-section">
