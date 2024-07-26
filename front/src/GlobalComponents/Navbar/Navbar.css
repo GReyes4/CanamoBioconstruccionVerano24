@@ -9,19 +9,25 @@
     align-items: center;
     height: 64px;
     max-width: none !important;
-}
-
-.navbar-brand {
-    display: flex;
-    align-items: center;
-    height: 100%;
+    padding: 0 20px;
 }
 
 .logo-img {
-    height: 70%;
+    height: 36px;
     width: auto;
     cursor: pointer;
     z-index: 4;
+}
+
+.desktop-logo {
+    display: block;
+    min-width: 120px;
+}
+
+.mobile-logo {
+    display: none;
+    max-width: 70px;
+    min-width: 70px;
 }
 
 .navbar-content-center {
@@ -60,7 +66,21 @@
     transition: font-size 0.3s ease-in-out;
 }
 
-.donar-button:hover {
+.donar-button-movil {
+    margin-right: 8px;
+    background-color: #38473E;
+    color: #EAE6E3;
+    border: none;
+    border-radius: 13px;
+    padding: 13px 40px;
+    font-size: 20px;
+    font-family: 'Montserrat';
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+    transition: font-size 0.3s ease-in-out;
+}
+
+.donar-button:hover, .donar-button-movil:hover {
     color: #3E4D3D;
     font-size: 21px;
     background-color: #ff9ae6;
@@ -79,4 +99,62 @@
 .dropdown-button:hover .navbar-link {
     font-weight: 400;
     color: #4e8664;
+}
+
+.menu-hamburguesa{
+    display: none !important;
+}
+
+/* Responsividad */
+@media (max-width: 1024px) {
+
+    .navbar-content-center {
+        gap: 15px !important; /* Reducir espacio entre enlaces */
+    }
+
+    .donar-button {
+        padding: 10px 32px; /* Botón de donación más pequeño */
+        font-size: 18px;
+    }
+}
+
+@media (max-width: 830px){
+    .menu-hamburguesa{
+        display: block !important;
+    }
+
+    .donar-button {
+        display: none;
+    }
+
+    .navbar-content-center{
+        display: none !important;
+    }
+}
+
+@media (max-width: 768px) {
+
+    .navbar-container {
+        height: 56px; /* Altura más pequeña para pantallas pequeñas */
+    }
+
+    .navbar-content-center, .navbar-content-end {
+        display: none; /* Ocultar los contenidos en dispositivos móviles */
+    }
+
+    /* Ajustes para el menú de hamburguesa */
+    .nextui-navbar-menu-container {
+        background-color: #EAE6E3;
+        padding: 20px;
+    }
+
+    .nextui-navbar-menu-item {
+        padding: 10px 0;
+    }
+
+    .navbar-menu {
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+    }
 }
