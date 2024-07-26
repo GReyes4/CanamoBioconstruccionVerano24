@@ -6,7 +6,7 @@ import './Nosotros.css';
 import RubenImagen from '../../assets/images/profeRuben.jpg';
 import ClaudiaImagen from '../../assets/images/mcClaudia.jpg';
 import BogdanImagen from '../../assets/images/arqBogdan.png';
-import Fundadores from '../Nosotros/Fundadores.png';
+import Fundadores from './Fundadores.png';
 
 const Nosotros = () => {
   const handleRefresh = () => {

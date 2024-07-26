@@ -1,14 +1,14 @@
 import './CanamoConecta.css'
 import { Link } from "react-router-dom";
 
-import Flechas1 from '../CanamoConecta/Flechas1.png';
-import Stickmen from '../CanamoConecta/Stickmen.png';
-import Bullseye from '../CanamoConecta/Bullseye.png';
-import UniversidadAutonomaLogo from '../CanamoConecta/UniversidadAutonomaLogo.png';
-import TecMonterreyLogo from '../CanamoConecta/TecMonterreyLogo.png';
-import Bioconstruccion from '../CanamoConecta/Bioconstruccion.png';
-import AgendaVerde from '../CanamoConecta/AgendaVerde.png';
-import Flechas2 from '../CanamoConecta/Flechas2.png';
+import Flechas1 from './Flechas1.png';
+import Stickmen from './Stickmen.png';
+import Bullseye from './Bullseye.png';
+import UniversidadAutonomaLogo from './UniversidadAutonomaLogo.png';
+import TecMonterreyLogo from './TecMonterreyLogo.png';
+import Bioconstruccion from './Bioconstruccion.png';
+import AgendaVerde from './AgendaVerde.png';
+import Flechas2 from './Flechas2.png';
 
 
 import Navbar from '../../GlobalComponents/Navbar/Navbar.jsx';
