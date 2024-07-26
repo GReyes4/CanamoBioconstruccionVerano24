@@ -1,5 +1,7 @@
 import './CanamoConecta.css'
-//
+import { Link } from "react-router-dom";
+
+
 
 import Navbar from '../../GlobalComponents/Navbar/Navbar.jsx';
 import Footer from '../../pages/Proyecto/Footer.jsx';
@@ -85,8 +87,8 @@ function CanamoConecta() {
 
               <div className='wrapperFooter'>
                   <img src="\src\assets\images\UniversidadAutonomaLogo.png"/>
-
-                <button className='genericButton'>Conoce más</button>
+                <a href="https://canamoconectaameec.net/" target='blank'><button className='genericButton'>Conoce más</button></a>
+                
               </div>
             </div>
           </div>
@@ -105,7 +107,7 @@ function CanamoConecta() {
 
                 <div className='wrapperFooter'>
                     <img src="\src\assets\images\TecMonterreyLogo.png"/>
-                  <button className='genericButton'>Conoce más</button>
+                  <a href="/proyecto" target='blank'><button className='genericButton' to="/proyecto">Conoce más</button></a>
                 </div>
             </div>
             
