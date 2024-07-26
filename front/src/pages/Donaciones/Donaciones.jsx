@@ -8,7 +8,7 @@ import imgHeaderDonaciones from './IMG_4612.jpg';
 
 //import { button } from "@/components/ui/button"
 //import { input } from "@/components/ui/input"
-
+//
 
 export default function Donaciones() {
   return (
