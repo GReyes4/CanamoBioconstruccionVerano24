@@ -1,4 +1,5 @@
 import React from 'react';
+import { useNavigate, Link } from "react-router-dom";
 import styled from 'styled-components';
 import ameec from './images/ameec.png';
 import facebook from './images/Facebook.png';
@@ -86,6 +87,7 @@ const FooterText = styled.p`
 const FooterLink = styled.a`
   color: #fff;
   text-decoration: none; /* Elimina la línea por defecto */
+  cursor: pointer;
   
   &:hover {
     text-decoration: underline; /* Añade subrayado al pasar el cursor */
@@ -93,26 +95,28 @@ const FooterLink = styled.a`
 `;
 
 const Footer = () => {
+  const navigate = useNavigate();
+
   return (
     <FooterContainer>
-      <LogoImage src={ameec} alt="Logo" />
+      <LogoImage src={ameec} alt="Logo" onClick={() => navigate("/")}/>
 
       <FooterContent>
         <FooterLinks>
           <FooterColumn>
-            <FooterText><FooterLink href="/nosotros" style={{ color: '#fff' }}>Sobre Nosotros</FooterLink></FooterText>
-            <FooterText><FooterLink href="/naayeri" style={{ color: '#fff' }}>Comunidad Nayeeri</FooterLink></FooterText>
-            <FooterText><FooterLink href="/canamo" style={{ color: '#fff' }}>Cañamo Conecta</FooterLink></FooterText>
+            <FooterText><FooterLink onClick={() => navigate("/nosotros")}>Sobre Nosotros</FooterLink></FooterText>
+            <FooterText><FooterLink onClick={() => navigate("/naayeri")}>Comunidad Nayeeri</FooterLink></FooterText>
+            <FooterText><FooterLink onClick={() => navigate("/canamo")}>Cañamo Conecta</FooterLink></FooterText>
           </FooterColumn>
           <FooterColumn>
-            <FooterText><FooterLink href="/proyecto" style={{ color: '#fff' }}>Bioconstrucción para el Desarrollo</FooterLink></FooterText>
-            <FooterText><FooterLink href="/alianzas" style={{ color: '#fff' }}>Alianzas</FooterLink></FooterText>
-            <FooterText><FooterLink href="/galeria" style={{ color: '#fff' }}>Galería</FooterLink></FooterText>
+            <FooterText><FooterLink onClick={() => navigate("/proyecto")}>Bioconstrucción para el Desarrollo</FooterLink></FooterText>
+            <FooterText><FooterLink onClick={() => navigate("/alianzas")}>Alianzas</FooterLink></FooterText>
+            <FooterText><FooterLink onClick={() => navigate("/galeria")}>Galería</FooterLink></FooterText>
           </FooterColumn>
           <FooterColumn>
-            <FooterText><FooterLink href="/donaciones" style={{ color: '#fff' }}>Donaciones</FooterLink></FooterText>
-            <FooterText><FooterLink href="/preguntas" style={{ color: '#fff' }}>FAQ</FooterLink></FooterText>
-            <FooterText><FooterLink href="https://docs.google.com/forms/d/e/1FAIpQLScNiR1w4if0bxEemmcuKKWMprZSLn-ay-tGbC9cKv5nP2a4AQ/viewform" style={{ color: '#fff' }}>Contacto</FooterLink></FooterText>
+            <FooterText><FooterLink onClick={() => navigate("/donaciones")}>Donaciones</FooterLink></FooterText>
+            <FooterText><FooterLink onClick={() => navigate("/preguntas")}>FAQ</FooterLink></FooterText>
+            <FooterText><FooterLink href="https://docs.google.com/forms/d/e/1FAIpQLScNiR1w4if0bxEemmcuKKWMprZSLn-ay-tGbC9cKv5nP2a4AQ/viewform" target="_blank" rel="noopener noreferrer">Contacto</FooterLink></FooterText>
           </FooterColumn>
         </FooterLinks>
       </FooterContent>
