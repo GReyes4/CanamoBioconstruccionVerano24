@@ -50,7 +50,7 @@ export default function Donaciones() {
     <>
       <PayPalScriptProvider
         options={{
-          clientId: 'AfuUmxiB7bKh1IE09pBqZ9FlGQSeosADfUEaQEFN1575DaSGK0p3ycIKH4i2UnElxEaL7nuW174TQ2eU',
+          clientId: '', //Cambiar este valor por la ID del cliente
           currency: 'MXN',
         }}
       >
