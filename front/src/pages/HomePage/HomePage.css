@@ -167,6 +167,13 @@
   font-family: 'Montserrat', sans-serif;
 }
 
+.titulos-destacadas{
+  color:white;
+  font-size: 54px;
+  font-weight: 780;
+  font-family: 'Montserrat', sans-serif;
+}
+
 .texto-mensaje{
   font-size: large;
   color: white;
@@ -308,5 +315,10 @@
     align-items: center;
     display: flex;
     margin-right: 0px;
+  }
+
+  .titulos-destacadas{
+    font-size: 6vw;
+    font-weight: 780;
   }
 }
