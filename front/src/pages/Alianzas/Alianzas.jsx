@@ -3,23 +3,23 @@ import './Alianzas.css'
 import Navbar from '../../GlobalComponents/Navbar/Navbar.jsx';
 import Footer from '../../pages/Proyecto/Footer.jsx';
 
-import EMA from '../Alianzas/1EMA.png';
-import JuanaVioleta from '../Alianzas/2JuanaVioleta.png';
-import SMPS from '../Alianzas/3SMPS.png';
-import TEC from '../Alianzas/4TEC.png';
-import Chapingo from '../Alianzas/5Chapingo.png';
-import Guadalajara from '../Alianzas/6Guadalajara.png';
-import LibreDerecho from '../Alianzas/7LibreDerecho.png';
-import UANL from '../Alianzas/8UANL.png';
-import Sinaloa from '../Alianzas/9Sinaloa.png';
-import LaSalle from '../Alianzas/10Salle.png';
-import Nayarit from '../Alianzas/11Nayarit.png';
-import UJED from '../Alianzas/12UJED.png';
-import Milenium from '../Alianzas/13Milenium.png';
-import TecNayarit from '../Alianzas/14TecNayarit.png';
-import CaminataEpica from '../Alianzas/CaminataEpica.png';
-import Flojo from '../Alianzas/Flojo.png';
-import Flojo2 from '../Alianzas/Flojo2.png';
+import EMA from './1EMA.png';
+import JuanaVioleta from './2JuanaVioleta.png';
+import SMPS from './3SMPS.png';
+import TEC from './4TEC.png';
+import Chapingo from './5Chapingo.png';
+import Guadalajara from './6Guadalajara.png';
+import LibreDerecho from './7LibreDerecho.png';
+import UANL from './8UANL.png';
+import Sinaloa from './9Sinaloa.png';
+import LaSalle from './10Salle.png';
+import Nayarit from './11Nayarit.png';
+import UJED from './12UJED.png';
+import Milenium from './13Milenium.png';
+import TecNayarit from './14TecNayarit.png';
+import CaminataEpica from './CaminataEpica.png';
+import Flojo from './Flojo.png';
+import Flojo2 from './Flojo2.png';
 
 
 
