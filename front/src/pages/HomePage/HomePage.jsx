@@ -40,8 +40,7 @@ function HomePage() {
         <a href='https://mx.linkedin.com/company/ameec' target='_blank' rel='noopener noreferrer'>
         <img src={iconoLinkedIn} className='social-icon' alt='LinkedIn' />
         </a>
-        <a href="https://www.youtube.com/@ameec.ac.
-        " target="_blank" rel="noopener noreferrer">
+        <a href="https://www.youtube.com/@ameec.ac." target="_blank" rel="noopener noreferrer">
         <img src={iconoYoutube} className='social-icon' alt='YouTube' />
         </a>
         <a href='https://wa.me/523334988518' target='_blank' rel='noopener noreferrer'>
