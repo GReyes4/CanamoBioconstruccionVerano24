@@ -1,6 +1,6 @@
 import React from 'react';
 import styled, { keyframes } from 'styled-components';
-import treeImage from '../images/ameec_logo.png'; // Asegúrate de que la ruta sea correcta
+import treeImage from './images/ameec_logo.png'; // Asegúrate de que la ruta sea correcta
 
 const ContactContainer = styled.section`
   padding: 40px 20px;

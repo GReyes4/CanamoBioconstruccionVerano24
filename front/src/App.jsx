@@ -15,19 +15,25 @@ import HomePage from "./pages/HomePage/HomePage.jsx";
 import CanamoConecta from "./pages/CanamoConecta/CanamoConecta.jsx";
 
 // Proyecto
-import Proyecto from "./pages/Proyecto/Proyecto.jsx";
+import Proyecto from "./pages/Proyecto/ProyectBio.jsx";
 
 // Naayeri
 import Naayeri from "./pages/Naayeri/Naayeri.jsx";
 
-//Alianzas
-import Alianzas from "./pages/Alianzas/Alianzas.jsx";
-
 //Nosotros
 import Nosotros from "./pages/Nosotros/Nosotros.jsx";
 
+//Alianzas
+import Alianzas from "./pages/Alianzas/Alianzas.jsx";
+
+//Galeria
+import Galeria from "./pages/galery/Galeria.jsx";
+
 //Donaciones
 import Donaciones from "./pages/Donaciones/Donaciones.jsx";
+
+//Preguntas frecuentes
+import Preguntas from "./pages/faq/Faq.jsx";
 
 const router = createBrowserRouter(
   createRoutesFromElements(
@@ -38,8 +44,9 @@ const router = createBrowserRouter(
         <Route path="naayeri" element={<Naayeri />} />
         <Route path="alianzas" element={<Alianzas />} />
         <Route path="nosotros" element={<Nosotros />} />
-        
+        <Route path="galeria" element={<Galeria />} />
         <Route path="donaciones" element={<Donaciones />} />
+        <Route path="preguntas" element={<Preguntas />} />
       </Route>
   )
 );

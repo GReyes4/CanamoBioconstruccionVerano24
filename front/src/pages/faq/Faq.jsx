@@ -1,9 +1,10 @@
-
-
 import React, { useState } from 'react';
 import styled from 'styled-components';
-import whatsLogo from '../images/whatsapplogo2.png'; // Asegúrate de que la ruta es correcta
-import ameec from '../images/ameec_logo.png'; // Asegúrate de que la ruta es correcta
+import Navbar from '../../GlobalComponents/Navbar/Navbar.jsx';
+import Footer from '../Proyecto/Footer.jsx';
+
+import whatsLogo from '../Proyecto/images/whatsapplogo2.png'; // Asegúrate de que la ruta es correcta
+import ameec from '../Proyecto/images/ameec_logo.png'; // Asegúrate de que la ruta es correcta
 
 const FAQContainer = styled.section`
   padding: 40px 20px;
@@ -272,6 +273,7 @@ Estamos comprometidos a continuar con este esfuerzo, asegurando que cada nueva i
 
   return (
     <div>
+      <Navbar />
       <FAQContainer>
         <Ameec src={ameec} alt="AMEEC Logo" />
         <Title>Preguntas frecuentes</Title>
