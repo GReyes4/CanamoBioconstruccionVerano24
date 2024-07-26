@@ -66,15 +66,17 @@
 
 .objetivo-proyecto-div{
   display: grid;
+  padding-top: 2vw;
+  padding-bottom: 2vw;
   grid-template-columns: 4fr 5fr;
-  height: 400px;
+  height: fit-content;
   background-color: #EAE6E3;
 }
 
 .objetivo-inferior-div{
   display: grid;
   grid-template-columns: 3fr 2fr;
-  height: 300px;
+  height: fit-content;
   background-color: #3E4D3D;
 }
 
@@ -138,7 +140,7 @@
 .mensaje-div{
   display: grid;
   grid-template-columns: 2fr 4fr;
-  height: 340px;
+  height: fit-content;
   background-color: #738063;
 }
 
@@ -153,12 +155,19 @@
   justify-content: center;
   gap: 27px;
   padding: 45px;
-  padding-left: 10px;
+  padding-left: 4vw;
   padding-bottom: 60px;
-  margin-right: 140px;
+  margin-right: 11vw;
 }
 
 .NombrePresi{
+  color:white;
+  font-size: 54px;
+  font-weight: 780;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.titulos-destacadas{
   color:white;
   font-size: 54px;
   font-weight: 780;
@@ -275,5 +284,41 @@
   .encabezado-button {
     margin-right: 1vw;
     height: fit-content;
+  }
+
+  .titulo-objetivo{
+    font-size: 5vw;
+  }
+
+  .objetivo-inferior-div{
+    padding-top: 5vw;
+    display: flex;
+    flex-direction: column-reverse;
+  }
+
+  .imgObjetivo{
+    width: 40vw;
+  }
+
+  .mensaje-div{
+    display: flex;
+    padding-top: 5vw;
+    flex-direction: column;
+    height: fit-content;
+    background-color: #738063;
+  }
+
+  .texto-mensaje-div{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    margin-right: 0px;
+  }
+
+  .titulos-destacadas{
+    font-size: 6vw;
+    font-weight: 780;
   }
 }

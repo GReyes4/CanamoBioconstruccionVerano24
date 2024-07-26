@@ -106,15 +106,15 @@ function HomePage() {
       <div className='secciones-destacadas-div'>
         <img src={imagenEventos} className='imgDestacadas' onClick={() => navigate("/canamo")}/>
         <div className='texto-destacadas-div' onClick={() => navigate("/canamo")}>
-          <h1 className='NombrePresi'> Proyectos </h1>
+          <h1 className='titulos-destacadas'> Proyectos </h1>
         </div>
         <div className='texto-destacadas-div' onClick={() => navigate("/donaciones")}>
-          <h1 className='NombrePresi'> Donaciones </h1>
+          <h1 className='titulos-destacadas'> Donaciones </h1>
         </div>
         <img src={imagenDonaciones} className='imgDestacadas' onClick={() => navigate("/donaciones")}/>
         <img src={imagenComunidad} className='imgDestacadas' onClick={() => navigate("/naayeri")}/>
         <div className='texto-destacadas-div' onClick={() => navigate("/naayeri")}>
-          <h1 className='NombrePresi'> Comunidad </h1>
+          <h1 className='titulos-destacadas'> Comunidad </h1>
         </div>
 
       </div>

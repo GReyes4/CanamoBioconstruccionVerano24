@@ -141,10 +141,10 @@ export default function Donaciones() {
                 </div>
               </div>
               <div className="max-w-md space-y-4">
-                <h2 className="text-3xl font-bold text-red-500">Ayuda a la Comunidad</h2>
+                <h2 className="text-3xl font-bold text-green-600">Ayuda a la Comunidad</h2>
                 <p className="text-black text-justify">
                   Tu <span className="font-bold">donativo</span> nos ayuda a conseguir materiales para{' '}
-                  <span className="font-bold text-red-500">ayudar a la comunidad nayeeri</span> como <span className="font-bold">fibra, paneles solares,
+                  <span className="font-bold text-green-600">ayudar a la comunidad nayeeri</span> como <span className="font-bold">fibra, paneles solares,
                   baños y cocinas.</span>
                 </p>
               </div>
@@ -153,7 +153,7 @@ export default function Donaciones() {
               <div className="max-w-4xl mx-auto flex flex-col items-center space-y-4 md:flex-row md:space-y-0 md:space-x-8">
                 <div className="space-y-2 text-center md:text-left">
                   <h3 className="text-3xl font-bold text-gray-900 text-left">Voluntariado</h3>
-                  <p className="text-lg text-black text-justify">Puedes apoyar con tu <span className="font-bold text-red-500">tiempo y habilidades</span> para ayudar al proyecto</p>
+                  <p className="text-lg text-black text-justify">Puedes apoyar con tu <span className="font-bold text-green-600">tiempo y habilidades</span> para ayudar al proyecto</p>
                   <div className="flex justify-center">
                     <a href="https://docs.google.com/forms/d/e/1FAIpQLScNiR1w4if0bxEemmcuKKWMprZSLn-ay-tGbC9cKv5nP2a4AQ/viewform">
                       <button className="bg-custom-green text-white py-3 px-6 rounded-lg">Unirse</button>

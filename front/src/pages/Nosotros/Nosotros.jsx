@@ -8,6 +8,10 @@ import ClaudiaImagen from '../../assets/images/mcClaudia.jpg';
 import BogdanImagen from '../../assets/images/arqBogdan.png';
 
 const Nosotros = () => {
+  const handleRefresh = () => {
+    window.location.reload();
+  };
+
   return (
     <div className="Nosotros">
       <Navbar />
@@ -37,7 +41,7 @@ const Nosotros = () => {
             <h2>Suscríbete a nuestro boletín de noticias</h2>
             <h3>Mantente al tanto con noticias recientes, actualizaciones y demás</h3>
             <input type="text" placeholder="Introduce tu correo" />
-            <button><strong>¡Haz click aquí!</strong></button>
+            <button onClick={handleRefresh}><strong>¡Haz click aquí!</strong></button>
           </div>
         </section>
         <section className="gallery-section">

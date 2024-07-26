@@ -147,9 +147,7 @@ const Ameec = styled.img`
   margin-bottom: -50px;
   
   @media (max-width: 768px) {
-    width: 40px;
-    height: 40px;
-    margin-top: 15px;
+    display: none;
   }
 `;
 
