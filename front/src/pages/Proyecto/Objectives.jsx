@@ -1,8 +1,8 @@
 import React from 'react';
 import styled from 'styled-components';
-import soste from '../images/soste.png';
-import educa from '../images/educa.png';
-import inclusion from '../images/inclusion.png';
+import soste from './images/soste.png';
+import educa from './images/educa.png';
+import inclusion from './images/inclusion.png';
 
 const ObjectivesContainer = styled.section`
   padding: 40px 20px;

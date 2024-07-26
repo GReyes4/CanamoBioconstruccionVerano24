@@ -1,8 +1,8 @@
 import React from 'react';
 import styled from 'styled-components';
-import ruben from '../images/ruben.jpg';
-import claudia from '../images/claudia.jpg';
-import arq from '../images/arq.png';
+import ruben from './images/ruben.jpg';
+import claudia from './images/claudia.jpg';
+import arq from './images/arq.png';
 
 const PeopleContainer = styled.section`
   padding: 40px 20px;

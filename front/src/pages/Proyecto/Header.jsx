@@ -1,12 +1,12 @@
 import React from 'react';
 import styled from 'styled-components';
-import TwitterIcon from '../images/Twitter.png';
-import InstagramIcon from '../images/Instagram.png';
-import FacebookIcon from '../images/Facebook.png';
-import LinkedInIcon from '../images/Linkedin.png';
-import YoutubeIcon from '../images/Youtube.png';
-import WhatsappIcon from '../images/whatsapplogo.png';
-import HeaderImage from '../images/encabezado.png';
+import TwitterIcon from './images/Twitter.png';
+import InstagramIcon from './images/Instagram.png';
+import FacebookIcon from './images/Facebook.png';
+import LinkedInIcon from './images/Linkedin.png';
+import YoutubeIcon from './images/Youtube.png';
+import WhatsappIcon from './images/whatsapplogo.png';
+import HeaderImage from './images/encabezado.png';
 
 const HeaderContainer = styled.header`
   position: relative;

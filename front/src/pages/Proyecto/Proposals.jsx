@@ -1,11 +1,11 @@
 import React from 'react';
 import styled from 'styled-components';
-import prop2 from '../images/prop2.jpg';
-import prop3 from '../images/prop3.jpg';
-import prop4 from '../images/prop4.jpg';
-import prop6 from '../images/prop6.jpg';
-import prop7 from '../images/prop7.JPG';
-import prop8 from '../images/prop8.JPG';
+import prop2 from './images/prop2.jpg';
+import prop3 from './images/prop3.jpg';
+import prop4 from './images/prop4.jpg';
+import prop6 from './images/prop6.jpg';
+import prop7 from './images/prop7.jpg';
+import prop8 from './images/prop8.jpg';
 
 
 const ProposalsContainer = styled.section`

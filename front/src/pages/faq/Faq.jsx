@@ -1,9 +1,7 @@
-
-
 import React, { useState } from 'react';
 import styled from 'styled-components';
-import whatsLogo from '../images/whatsapplogo2.png'; // Asegúrate de que la ruta es correcta
-import ameec from '../images/ameec_logo.png'; // Asegúrate de que la ruta es correcta
+import whatsLogo from '../Proyecto/images/whatsapplogo2.png'; // Asegúrate de que la ruta es correcta
+import ameec from '../Proyecto/images/ameec_logo.png'; // Asegúrate de que la ruta es correcta
 
 const FAQContainer = styled.section`
   padding: 40px 20px;

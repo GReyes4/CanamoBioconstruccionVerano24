@@ -1,7 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
-import AmeecLogo from '../images/ameec.png';
-import TecLogo from '../images/tec.png';
+import AmeecLogo from './images/ameec.png';
+import TecLogo from './images/tec.png';
 
 const CarryContainer = styled.section`
   display: flex;

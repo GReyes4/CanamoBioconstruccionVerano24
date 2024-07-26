@@ -1,10 +1,10 @@
 import React from 'react';
 import styled, { keyframes } from 'styled-components';
-import com1 from '../images/com1.png';
-import com2 from '../images/com2.png';
-import com3 from '../images/com3.png';
-import com4 from '../images/com4.png';
-import video from '../images/videoCom.MOV';
+import com1 from './images/img1.png';
+import com2 from './images/img2.png';
+import com3 from './images/img3.png';
+import com4 from './images/img4.png';
+import video from './images/videoCom.mov';
 
 const CommunityContainer = styled.section`
   padding: 40px 20px;
