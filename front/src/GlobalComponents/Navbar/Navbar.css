@@ -109,11 +109,11 @@
 @media (max-width: 1024px) {
 
     .navbar-content-center {
-        gap: 15px !important; /* Reducir espacio entre enlaces */
+        gap: 15px !important;
     }
 
     .donar-button {
-        padding: 10px 32px; /* Botón de donación más pequeño */
+        padding: 10px 32px;
         font-size: 18px;
     }
 }
@@ -135,11 +135,11 @@
 @media (max-width: 768px) {
 
     .navbar-container {
-        height: 56px; /* Altura más pequeña para pantallas pequeñas */
+        height: 56px;
     }
 
     .navbar-content-center, .navbar-content-end {
-        display: none; /* Ocultar los contenidos en dispositivos móviles */
+        display: none;
     }
 
     /* Ajustes para el menú de hamburguesa */
