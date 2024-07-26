@@ -100,19 +100,19 @@ const Footer = () => {
       <FooterContent>
         <FooterLinks>
           <FooterColumn>
-            <FooterText><FooterLink href="#about" style={{ color: '#fff' }}>Sobre Nosotros</FooterLink></FooterText>
-            <FooterText><FooterLink href="#community" style={{ color: '#fff' }}>Comunidad Nayeeri</FooterLink></FooterText>
-            <FooterText><FooterLink href="#connect" style={{ color: '#fff' }}>Cañamo Conecta</FooterLink></FooterText>
+            <FooterText><FooterLink href="/nosotros" style={{ color: '#fff' }}>Sobre Nosotros</FooterLink></FooterText>
+            <FooterText><FooterLink href="/naayeri" style={{ color: '#fff' }}>Comunidad Nayeeri</FooterLink></FooterText>
+            <FooterText><FooterLink href="/canamo" style={{ color: '#fff' }}>Cañamo Conecta</FooterLink></FooterText>
           </FooterColumn>
           <FooterColumn>
-            <FooterText><FooterLink href="#bioconstruction" style={{ color: '#fff' }}>Bioconstrucción para el Desarrollo</FooterLink></FooterText>
-            <FooterText><FooterLink href="#alliances" style={{ color: '#fff' }}>Alianzas</FooterLink></FooterText>
-            <FooterText><FooterLink href="#gallery" style={{ color: '#fff' }}>Galería</FooterLink></FooterText>
+            <FooterText><FooterLink href="/proyecto" style={{ color: '#fff' }}>Bioconstrucción para el Desarrollo</FooterLink></FooterText>
+            <FooterText><FooterLink href="/alianzas" style={{ color: '#fff' }}>Alianzas</FooterLink></FooterText>
+            <FooterText><FooterLink href="/galeria" style={{ color: '#fff' }}>Galería</FooterLink></FooterText>
           </FooterColumn>
           <FooterColumn>
-            <FooterText><FooterLink href="#donations" style={{ color: '#fff' }}>Donaciones</FooterLink></FooterText>
-            <FooterText><FooterLink href="#faq" style={{ color: '#fff' }}>FAQ</FooterLink></FooterText>
-            <FooterText><FooterLink href="#contact" style={{ color: '#fff' }}>Contacto</FooterLink></FooterText>
+            <FooterText><FooterLink href="/donaciones" style={{ color: '#fff' }}>Donaciones</FooterLink></FooterText>
+            <FooterText><FooterLink href="/preguntas" style={{ color: '#fff' }}>FAQ</FooterLink></FooterText>
+            <FooterText><FooterLink href="https://docs.google.com/forms/d/e/1FAIpQLScNiR1w4if0bxEemmcuKKWMprZSLn-ay-tGbC9cKv5nP2a4AQ/viewform" style={{ color: '#fff' }}>Contacto</FooterLink></FooterText>
           </FooterColumn>
         </FooterLinks>
       </FooterContent>
