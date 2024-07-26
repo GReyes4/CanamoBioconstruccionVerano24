@@ -1,3 +1,5 @@
+import Navbar from '../../GlobalComponents/Navbar/Navbar.jsx';
+import Footer from '../Proyecto/Footer.jsx';
 
 import Benefits from './Benefits.jsx';
 import Community from './Community.jsx';
@@ -13,6 +15,7 @@ import Construccion from './Construccion.jsx';
 const ProyectBio = () => {
     return (
         <>
+            <Navbar />
             <Header />
             <Carry />
             <Construccion />

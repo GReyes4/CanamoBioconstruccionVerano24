@@ -1,6 +1,8 @@
 import React, { useState } from 'react';
 import styled from 'styled-components';
 import { FaArrowLeft, FaArrowRight } from 'react-icons/fa';
+import Navbar from '../../GlobalComponents/Navbar/Navbar.jsx';
+import Footer from '../Proyecto/Footer.jsx';
 import Header from './Header2.jsx';
 import Bar from './Bar.jsx';
 import ameec from '../Proyecto/images/ameec_logo.png';
@@ -243,7 +245,9 @@ const Galeria = () => {
   };
 
   return (
+    
     <GaleriaContainer>
+      <Navbar />
       <Header />
       <Bar />
       <Title>Eventos</Title>
