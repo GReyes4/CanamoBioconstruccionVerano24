@@ -1,138 +1,173 @@
 import React, { useState } from 'react';
-
 import Navbar from '../../GlobalComponents/Navbar/Navbar.jsx';
 import Footer from '../Proyecto/Footer.jsx';
 import imgVoluntariado from './IMG_4883.jpg';
 import imgHeaderDonaciones from './IMG_4612.jpg';
-
-import { PayPalScriptProvider, PayPalButtons } from '@paypal/react-paypal-js'
-
+import { PayPalScriptProvider, PayPalButtons } from '@paypal/react-paypal-js';
 
 export default function Donaciones() {
-
-  const [success, setSuccess] = useState(false)
-  const [errorMessage, setErrorMessage] = useState('')
-  const [orderId, setOrderId] = useState(false)
+  const [success, setSuccess] = useState(false);
+  const [errorMessage, setErrorMessage] = useState('');
+  const [orderId, setOrderId] = useState(false);
+  const [donationAmount, setDonationAmount] = useState(100); // Valor inicial de la donación
 
   const createOrder = (data, actions) => {
-      return actions.order.create({
-        purchase_units: [
-          {
-            description: 'Donación',
-            amount: {
-              currency_code: 'MXN',
-              value: 100
-            },
+    return actions.order.create({
+      purchase_units: [
+        {
+          description: 'Donación',
+          amount: {
+            currency_code: 'MXN',
+            value: donationAmount,
           },
-        ],
-        application_context: {
-          shipping_preference:'NO_SHIPPING'
-        }
-      })
-      .then((orderId) => {
-        setOrderId(orderId)
-        return orderId
-      })
-  }
+        },
+      ],
+      application_context: {
+        shipping_preference: 'NO_SHIPPING',
+      },
+    }).then((orderId) => {
+      setOrderId(orderId);
+      return orderId;
+    });
+  };
 
   const onApprove = (data, actions) => {
-    return actions.order.capture().then(function(details){
-      const {payer} = details
-      setSuccess(true)
-
-    })
-  }
+    return actions.order.capture().then((details) => {
+      const { payer } = details;
+      setSuccess(true);
+    });
+  };
 
   const onError = (data, actions) => {
-    setErrorMessage("A ocurrido un error con su pago")
-  }
+    setErrorMessage('Ha ocurrido un error con su pago');
+  };
+
+  const handleCustomAmountChange = (e) => {
+    setDonationAmount(e.target.value);
+  };
 
   return (
     <>
       <PayPalScriptProvider
         options={{
-          'clientId': "AfuUmxiB7bKh1IE09pBqZ9FlGQSeosADfUEaQEFN1575DaSGK0p3ycIKH4i2UnElxEaL7nuW174TQ2eU",
-          'currency': 'MXN'
+          clientId: 'AfuUmxiB7bKh1IE09pBqZ9FlGQSeosADfUEaQEFN1575DaSGK0p3ycIKH4i2UnElxEaL7nuW174TQ2eU',
+          currency: 'MXN',
         }}
       >
-      <Navbar />
-      
-      <div className="min-h-screen bg-gray-100">
-        <header
-          className="relative w-full h-64 bg-cover bg-center"
-          style={{ backgroundImage: `url(${imgHeaderDonaciones})` }}
-        >
-          <div className="absolute inset-0 bg-black bg-opacity-50" />
-          <div className="relative flex items-center justify-center h-full">
-            <h1 className="text-4xl font-bold text-white">Apoya a la comunidad con una donación</h1>
-          </div>
-        </header>
-        <main className="flex flex-col items-center py-8 space-y-8">
-          <div className="flex flex-col items-center space-y-4 md:flex-row md:space-y-0 md:space-x-8">
-            <div className="bg-custom-green text-white p-8 rounded-lg shadow-lg w-full max-w-md">
-              <div className="space-y-4">
-                <div className="flex items-center space-x-4">
-                  <button className="w-full bg-black text-white py-2 px-4 rounded-lg">$100</button>
-                  <input placeholder="Nombre" className="w-full bg-white text-black py-2 px-4 rounded-lg" />
+        <Navbar />
+        <div className="min-h-screen bg-gray-100">
+          <header
+            className="relative w-full h-64 bg-cover bg-center"
+            style={{ backgroundImage: `url(${imgHeaderDonaciones})` }}
+          >
+            <div className="absolute inset-0 bg-black bg-opacity-50" />
+            <div className="relative flex items-center justify-center h-full">
+              <h1 className="text-5xl font-bold text-white">Apoya a la comunidad con una donación</h1>
+            </div>
+          </header>
+          <main className="flex flex-col items-center py-8 space-y-8">
+            <div className="flex flex-col items-center space-y-4 md:flex-row md:space-y-0 md:space-x-8">
+              <div className="bg-custom-green text-white p-8 rounded-lg shadow-lg w-full max-w-md">
+                <h2 className="text-3xl w-full text-white font-bold text-center py-2 px-4 rounded-lg">Donar a la causa</h2>
+                <div className="space-y-4">
+                  <div className="flex items-center p-4 border rounded-lg">
+                    <input
+                      type="radio"
+                      id="amount50"
+                      name="amount"
+                      className="w-5 h-5 text-blue-600"
+                      checked={donationAmount == 50}
+                      onChange={() => setDonationAmount(50)}
+                    />
+                    <label htmlFor="amount50" className="ml-3 text-2xl font-bold">
+                      $50
+                    </label>
+                  </div>
+                  <div className="flex items-center p-4 border rounded-lg">
+                    <input
+                      type="radio"
+                      id="amount100"
+                      name="amount"
+                      className="w-5 h-5 text-blue-600"
+                      checked={donationAmount == 100}
+                      onChange={() => setDonationAmount(100)}
+                    />
+                    <label htmlFor="amount100" className="ml-3 text-2xl font-bold">
+                      $100
+                    </label>
+                  </div>
+                  <div className="flex items-center p-4 border rounded-lg">
+                    <input
+                      type="radio"
+                      id="amount200"
+                      name="amount"
+                      className="w-5 h-5 text-blue-600"
+                      checked={donationAmount == 200}
+                      onChange={() => setDonationAmount(200)}
+                    />
+                    <label htmlFor="amount200" className="ml-3 text-2xl font-bold">
+                      $200
+                    </label>
+                  </div>
+                  <div className="flex items-center p-4 border rounded-lg">
+                    <input
+                      type="radio"
+                      id="customAmount"
+                      name="amount"
+                      className="w-5 h-5 text-blue-600"
+                      checked={![50, 100, 200].includes(parseInt(donationAmount))}
+                      onChange={() => setDonationAmount('')}
+                    />
+                    <input
+                      type="text"
+                      id="customAmountInput"
+                      name="customAmount"
+                      className="ml-3 w-60 p-2 border rounded-lg text-black"
+                      placeholder="Custom"
+                      value={donationAmount}
+                      onChange={handleCustomAmountChange}
+                    />
+                  </div>
                 </div>
-                <div className="flex items-center space-x-4">
-                  <button className="w-full bg-black text-white py-2 px-4 rounded-lg">$200</button>
-                  <input placeholder="Apellido Paterno" className="w-full bg-white text-black py-2 px-4 rounded-lg" />
-                </div>
-                <div className="flex items-center space-x-4">
-                  <button className="w-full bg-black text-white py-2 px-4 rounded-lg">$500</button>
-                  <input placeholder="Apellido Materno" className="w-full bg-white text-black py-2 px-4 rounded-lg" />
-                </div>
-                <div className="flex items-center space-x-4">
-                  <input placeholder="$ Otro" className="w-full bg-white text-black py-2 px-4 rounded-lg" />
-                  <input
-                    placeholder="Correo electrónico"
-                    className="w-full bg-white text-black py-2 px-4 rounded-lg"
+
+                <div className="mt-6">
+                  <PayPalButtons
+                    key={donationAmount} // Force re-render on donation amount change
+                    style={{ layout: 'vertical' }}
+                    createOrder={createOrder}
+                    onApprove={onApprove}
+                    onError={onError}
                   />
                 </div>
-                <div className="flex items-center space-x-4">
-                  <input placeholder="País" className="w-full bg-white text-black py-2 px-4 rounded-lg" />
-                  <input placeholder="Estado" className="w-full bg-white text-black py-2 px-4 rounded-lg" />
-                </div>
-                <div className="flex items-center space-x-4">
-                  <input placeholder="No. de tarjeta" className="w-1/2 bg-white text-black py-2 px-4 rounded-lg" />
-                  <input placeholder="mm/aa" className="w-1/4 bg-white text-black py-2 px-4 rounded-lg" />
-                  <input placeholder="CVV" className="w-1/4 bg-white text-black py-2 px-4 rounded-lg" />
-                </div>
-                <PayPalButtons style={{layout: 'vertical'}} createOrder={createOrder}
-                onApprove={onApprove} onError={onError}/>
-                <button className="w-full bg-pink-500 text-white py-2 px-4 rounded-lg">Hacer donativo</button>
+              </div>
+              <div className="max-w-md space-y-4">
+                <h2 className="text-3xl font-bold text-red-500">Ayuda a la Comunidad</h2>
+                <p className="text-black">
+                  Tu <span className="font-bold">donativo</span> nos ayuda a conseguir materiales para{' '}
+                  <span className="font-bold text-red-500">ayudar a la comunidad nayeeri</span> como fibra, paneles solares,
+                  baños y cocinas.
+                </p>
               </div>
             </div>
-            <div className="max-w-md space-y-4">
-              <h2 className="text-2xl font-bold text-red-500">Ayuda a la Comunidad</h2>
-              <p className="text-black">
-                Tu <span className="font-bold">donativo</span> nos ayuda a conseguir materiales para{" "}
-                <span className="font-bold text-red-500">ayudar a la comunidad nayeeri</span> como fibra, paneles solares,
-                baños y cocinas
-              </p>
-            </div>
-          </div>
-          <div className="w-full bg-gray-200 py-8">
-            <div className="max-w-4xl mx-auto flex flex-col items-center space-y-4 md:flex-row md:space-y-0 md:space-x-8">
-              <div className="space-y-2 text-center md:text-left">
-                <h3 className="text-3xl font-bold text-gray-900">Voluntariado</h3>
-                <p className="text-lg text-gray-700">Puedes apoyar con tu tiempo y habilidades para ayudar al proyecto</p>
-                <div className="flex justify-center">
-                  <a href="https://docs.google.com/forms/d/e/1FAIpQLScNiR1w4if0bxEemmcuKKWMprZSLn-ay-tGbC9cKv5nP2a4AQ/viewform">
-                    <button className="bg-custom-green text-white py-3 px-6 rounded-lg">Unirse</button>
-                  </a>
+            <div className="w-full bg-gray-200 py-8">
+              <div className="max-w-4xl mx-auto flex flex-col items-center space-y-4 md:flex-row md:space-y-0 md:space-x-8">
+                <div className="space-y-2 text-center md:text-left">
+                  <h3 className="text-3xl font-bold text-gray-900">Voluntariado</h3>
+                  <p className="text-lg text-gray-700">Puedes apoyar con tu tiempo y habilidades para ayudar al proyecto</p>
+                  <div className="flex justify-center">
+                    <a href="https://docs.google.com/forms/d/e/1FAIpQLScNiR1w4if0bxEemmcuKKWMprZSLn-ay-tGbC9cKv5nP2a4AQ/viewform">
+                      <button className="bg-custom-green text-white py-3 px-6 rounded-lg">Unirse</button>
+                    </a>
+                  </div>
+                </div>
+                <div className="w-full max-w-md">
+                  <img src={imgVoluntariado} alt="Voluntariado" className="w-full h-auto rounded-lg shadow-lg" />
                 </div>
               </div>
-              <div className="w-full max-w-md">
-                <img src={imgVoluntariado} alt="Voluntariado" className="w-full h-auto rounded-lg shadow-lg" />
-              </div>
             </div>
-          </div>
-        </main>
-      </div>
-
-      <Footer />
+          </main>
+        </div>
+        <Footer />
       </PayPalScriptProvider>
     </>
   );
