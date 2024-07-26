@@ -1,32 +1,32 @@
 import React, { useState } from 'react';
 import styled from 'styled-components';
 import { FaArrowLeft, FaArrowRight } from 'react-icons/fa';
-import Header from './Header2';
-import Bar from './Bar';
-import ameec from '../images/ameec_logo.png';
+import Header from './Header2.jsx';
+import Bar from './Bar.jsx';
+import ameec from '../Proyecto/images/ameec_logo.png';
 
-import ai1 from '../images/ArqIng/ai1.jpg';
-import ai2 from '../images/ArqIng/ai2.jpg';
-import ai3 from '../images/ArqIng/ai3.jpg';
-import ai4 from '../images/ArqIng/ai4.jpg';
-import aiv1 from '../images/ArqIng/aiv1.mov';
-import aiv2 from '../images/ArqIng/aiv2.mov';
+import ai1 from '../Proyecto/images/ArqIng/ai1.jpg';
+import ai2 from '../Proyecto/images/ArqIng/ai2.jpg';
+import ai3 from '../Proyecto/images/ArqIng/ai3.jpg';
+import ai4 from '../Proyecto/images/ArqIng/ai4.jpg';
+import aiv1 from '../Proyecto/images/ArqIng/aiv1.mov';
+import aiv2 from '../Proyecto/images/ArqIng/aiv2.mov';
 
-import a1 from '../images/FinalArq/a1.jpg';
-import a2 from '../images/FinalArq/a2.jpg';  
-import a3 from '../images/FinalArq/a3.jpg';
-import av1 from '../images/FinalArq/av1.mov';
-import av2 from '../images/FinalArq/av2.mov';
+import a1 from '../Proyecto/images/FinalArq/a1.jpg';
+import a2 from '../Proyecto/images/FinalArq/a2.jpg';  
+import a3 from '../Proyecto/images/FinalArq/a3.jpg';
+import av1 from '../Proyecto/images/FinalArq/av1.mov';
+import av2 from '../Proyecto/images/FinalArq/av2.mov';
 
-import i1 from '../images/FinalIng/i1.jpg';
-import i2 from '../images/FinalIng/i2.jpg';
-import i3 from '../images/FinalIng/i3.jpg';
-import i4 from '../images/FinalIng/i4.jpg';
-import i5 from '../images/FinalIng/i5.jpg';
-import i6 from '../images/FinalIng/i6.jpg';
-import i7 from '../images/FinalIng/i7.jpg';
-import iv1 from '../images/FinalIng/iv1.mov';
-import iv2 from '../images/FinalIng/iv2.mov';
+import i1 from '../Proyecto/images/FinalIng/i1.jpg';
+import i2 from '../Proyecto/images/FinalIng/i2.jpg';
+import i3 from '../Proyecto/images/FinalIng/i3.jpg';
+import i4 from '../Proyecto/images/FinalIng/i4.jpg';
+import i5 from '../Proyecto/images/FinalIng/i5.jpg';
+import i6 from '../Proyecto/images/FinalIng/i6.jpg';
+import i7 from '../Proyecto/images/FinalIng/i7.jpg';
+import iv1 from '../Proyecto/images/FinalIng/iv1.mov';
+import iv2 from '../Proyecto/images/FinalIng/iv2.mov';
 
 const GaleriaContainer = styled.div`
   font-family: 'Montserrat', sans-serif;

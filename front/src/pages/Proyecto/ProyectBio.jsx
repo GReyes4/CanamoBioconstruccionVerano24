@@ -1,13 +1,13 @@
 
-import Benefits from './Benefits';
-import Community from './Community';
-import Contact from './Contact';
-import Header from './Header';
-import Objectives from './Objectives';
-import People from './People';
-import Proposals from './Proposals';
-import Carry from './Carry';
-import Construccion from './Construccion';
+import Benefits from './Benefits.jsx';
+import Community from './Community.jsx';
+import Contact from './Contact.jsx';
+import Header from './Header.jsx';
+import Objectives from './Objectives.jsx';
+import People from './People.jsx';
+import Proposals from './Proposals.jsx';
+import Carry from './Carry.jsx';
+import Construccion from './Construccion.jsx';
 
 
 const ProyectBio = () => {
