@@ -299,6 +299,7 @@ const Galeria = () => {
         </Indicators>
       </CarouselContainer>
       <Ameec src={ameec} alt="AMEEC" />
+      <Footer/>
     </GaleriaContainer>
   );
 };

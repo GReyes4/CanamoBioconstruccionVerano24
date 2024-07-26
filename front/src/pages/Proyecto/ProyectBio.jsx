@@ -25,6 +25,7 @@ const ProyectBio = () => {
             <Community />
             <People />
             <Contact />
+            <Footer/>
             
         </>
     );
