@@ -62,11 +62,11 @@ export default function Donaciones() {
           >
             <div className="absolute inset-0 bg-black bg-opacity-50" />
             <div className="relative flex items-center justify-center h-full">
-              <h1 className="text-5xl font-bold text-white">Apoya a la comunidad con una donación</h1>
+            <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold text-white text-center px-4">Apoya a la comunidad con una donación</h1>
             </div>
           </header>
           <main className="flex flex-col items-center py-8 space-y-8">
-            <div className="flex flex-col items-center space-y-4 md:flex-row md:space-y-0 md:space-x-8">
+            <div className="flex flex-col items-center space-y-4 md:flex-row md:space-y-0 md:space-x-8 p-10">
               <div className="bg-custom-green text-white p-8 rounded-lg shadow-lg w-full max-w-md">
                 <h2 className="text-3xl w-full text-white font-bold text-center py-2 px-4 rounded-lg">Donar a la causa</h2>
                 <div className="space-y-4">
@@ -142,18 +142,18 @@ export default function Donaciones() {
               </div>
               <div className="max-w-md space-y-4">
                 <h2 className="text-3xl font-bold text-red-500">Ayuda a la Comunidad</h2>
-                <p className="text-black">
+                <p className="text-black text-justify">
                   Tu <span className="font-bold">donativo</span> nos ayuda a conseguir materiales para{' '}
-                  <span className="font-bold text-red-500">ayudar a la comunidad nayeeri</span> como fibra, paneles solares,
-                  baños y cocinas.
+                  <span className="font-bold text-red-500">ayudar a la comunidad nayeeri</span> como <span className="font-bold">fibra, paneles solares,
+                  baños y cocinas.</span>
                 </p>
               </div>
             </div>
-            <div className="w-full bg-gray-200 py-8">
+            <div className="w-full bg-gray-200 p-10">
               <div className="max-w-4xl mx-auto flex flex-col items-center space-y-4 md:flex-row md:space-y-0 md:space-x-8">
                 <div className="space-y-2 text-center md:text-left">
-                  <h3 className="text-3xl font-bold text-gray-900">Voluntariado</h3>
-                  <p className="text-lg text-gray-700">Puedes apoyar con tu tiempo y habilidades para ayudar al proyecto</p>
+                  <h3 className="text-3xl font-bold text-gray-900 text-left">Voluntariado</h3>
+                  <p className="text-lg text-black text-justify">Puedes apoyar con tu <span className="font-bold text-red-500">tiempo y habilidades</span> para ayudar al proyecto</p>
                   <div className="flex justify-center">
                     <a href="https://docs.google.com/forms/d/e/1FAIpQLScNiR1w4if0bxEemmcuKKWMprZSLn-ay-tGbC9cKv5nP2a4AQ/viewform">
                       <button className="bg-custom-green text-white py-3 px-6 rounded-lg">Unirse</button>
