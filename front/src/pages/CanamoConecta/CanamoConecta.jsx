@@ -1,6 +1,14 @@
 import './CanamoConecta.css'
 import { Link } from "react-router-dom";
 
+import Flechas1 from '../CanamoConecta/Flechas1.png';
+import Stickmen from '../CanamoConecta/Stickmen.png';
+import Bullseye from '../CanamoConecta/Bullseye.png';
+import UniversidadAutonomaLogo from '../CanamoConecta/UniversidadAutonomaLogo.png';
+import TecMonterreyLogo from '../CanamoConecta/TecMonterreyLogo.png';
+import Bioconstruccion from '../CanamoConecta/Bioconstruccion.png';
+import AgendaVerde from '../CanamoConecta/AgendaVerde.png';
+import Flechas2 from '../CanamoConecta/Flechas2.png';
 
 
 import Navbar from '../../GlobalComponents/Navbar/Navbar.jsx';
@@ -26,12 +34,12 @@ function CanamoConecta() {
 
               <div className='arrowContainer'>
                 <div className="leftSide">
-                  <img src="\src\assets\images\Flechas1.png" alt="Flechas1" />
+                  <img src={Flechas1} alt="Flechas1" />
                   <h2>¿De qué trata?</h2>
                 </div>
 
                 <div className='rightSide'>
-                  <img src="\src\assets\images\Flechas2.png" alt="Flechas2" />
+                  <img src={Flechas2} alt="Flechas2" />
                 </div>
               </div>
 
@@ -54,11 +62,11 @@ function CanamoConecta() {
                   seguridad y sostenibilidad.</strong></p>
                 </div>
 
-                 <img src="\src\assets\images\Stickmen.png" alt="Stickmen" className='icon'/>
+                 <img src={Stickmen} alt="Stickmen" className='icon'/>
               </div>
 
               <div className='arrowContainer'>
-              <img src="\src\assets\images\Bullseye.png" alt="Bullseye" className='icon'/>
+              <img src={Bullseye} alt="Bullseye" className='icon'/>
                 <div className='leftSide'>
                   <p>Al enfocarse exclusivamente en el <strong>cáñamo industrial</strong>, evita controversias relacionadas
                   con el uso lúdico del cannabis, aumentando su aceptación y apoyo. </p>
@@ -73,7 +81,7 @@ function CanamoConecta() {
 
           <div className='wrapper'>
             <div className='shortImageWrapper'>
-              <img src="\src\assets\images\AgendaVerde.png"/>
+              <img src={AgendaVerde} alt='Agenda verde'/>
             </div>
             <div className='largeTextWrapper'>
               <h2>Agenda verde del Cáñamo Industrial en México</h2>
@@ -86,7 +94,7 @@ function CanamoConecta() {
               </p>
 
               <div className='wrapperFooter'>
-                  <img src="\src\assets\images\UniversidadAutonomaLogo.png"/>
+                  <img src={UniversidadAutonomaLogo} alt='UniversidadAutonoma'/>
                 <a href="https://canamoconectaameec.net/" target='blank'><button className='genericButton'>Conoce más</button></a>
                 
               </div>
@@ -106,13 +114,13 @@ function CanamoConecta() {
                 </p>
 
                 <div className='wrapperFooter'>
-                    <img src="\src\assets\images\TecMonterreyLogo.png"/>
+                    <img src={TecMonterreyLogo} alt='Tec de Monterrey'/>
                   <a href="/proyecto" target='blank'><button className='genericButton' to="/proyecto">Conoce más</button></a>
                 </div>
             </div>
             
             <div className='shortImageWrapper'>
-              <img src="\src\assets\images\Bioconstruccion.png"/>
+              <img src={Bioconstruccion} alt='Bioconstrucción'/>
             </div>
           </div>
         
