@@ -126,19 +126,19 @@ function HomePage() {
           <div className='tarjeta-noticias'>
             <img src={imgNoticiaSantaFe} className='imgNoticias'/>
             <h1 className='titulo-card'>Presentación 3 de junio Tec de monterrey Campus Santa fe</h1>
-            <p className='texto-card'>lorem ipsum as sad asdas dasd asd asd asdsadsadasdasdasd asd asd asd asdasdas sad asdasdasdads</p>
+            <p className='texto-card'>Ameec hace su debut para presentar objetivos y sus desarrollos conforme al plan establecido en la alianza con el Tec</p>
           </div>
 
           <div className='tarjeta-noticias'>
             <img src={imgNoticiaIngenieria} className='imgNoticias'/>
             <h1 className='titulo-card'>Presentación final Ingeniería en desarrollo sustentable Tec de Monterrey Campus CDMX</h1>
-            <p className='texto-card'>lorem ipsum as sad asdas dasd asd asd asdsadsadasdasdasd asd asd asd asdasdas sad asdasdasdads</p>
+            <p className='texto-card'>Estudiantes presentan innovadores proyectos alineados con los objetivos de desarrollo sostenible</p>
           </div>
 
           <div className='tarjeta-noticias'>
             <img src={imgNoticiaArqui} className='imgNoticias'/>
             <h1 className='titulo-card'>Presentación final Arquitectura Tec de Monterrey Campus CDMX</h1>
-            <p className='texto-card'>lorem ipsum as sad asdas dasd asd asd asdsadsadasdasdasd asd asd asd asdasdas sad asdasdasdads</p>
+            <p className='texto-card'>Propuestas arquitectónicas creativas y sostenibles destacan en la utilización efectiva del cáñamo como material de construcción</p>
           </div>
         </div>
       </div>
