@@ -9,7 +9,7 @@ body {
     position: relative;
     width: 100%;
     height: 400px; 
-    background-image: url('/src/pages/Alianzas/Images/Background.png'); 
+    background-image: url('/src/pages/Alianzas/Background.png'); 
     background-size: cover;
     background-position: center;
     display: flex;
