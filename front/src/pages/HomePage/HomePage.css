@@ -341,4 +341,16 @@
     font-size: 50px;
     text-align: center;
   }
+
+}
+
+@media (max-width: 400px){
+  .tarjeta-noticias{
+    display: grid;
+    width: 100%;
+    height: fit-content;
+    grid-template-rows: 2fr 1fr 1fr;
+    border: 2px solid #B5B5B5;
+    margin-top: 20px;
+  }
 }
